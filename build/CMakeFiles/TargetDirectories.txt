@@ -1,0 +1,6 @@
+C:/vscode-workplace/c/Hazel/build/CMakeFiles/ALL_BUILD.dir
+C:/vscode-workplace/c/Hazel/build/CMakeFiles/ZERO_CHECK.dir
+C:/vscode-workplace/c/Hazel/build/Hazel/CMakeFiles/HazelCore.dir
+C:/vscode-workplace/c/Hazel/build/Hazel/CMakeFiles/ALL_BUILD.dir
+C:/vscode-workplace/c/Hazel/build/SandBox/CMakeFiles/SandBox.dir
+C:/vscode-workplace/c/Hazel/build/SandBox/CMakeFiles/ALL_BUILD.dir

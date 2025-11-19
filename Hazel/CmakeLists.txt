@@ -1,0 +1,21 @@
+project(Hazel_core)
+
+cmake_minimum_required(VERSION 3.10)
+
+add_library(HazelCore SHARED
+    src/Hazel/Application.cpp
+)
+
+target_include_directories(HazelCore
+    PUBLIC
+        ${CMAKE_CURRENT_SOURCE_DIR}/src
+)
+
+target_compile_definitions(HazelCore PRIVATE HAZEL_BUILD_API WINDOWS)
+
+
+set_target_properties(HazelCore PROPERTIES
+    RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin
+    LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib
+    ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib
+)

@@ -1,6 +1,5 @@
 #pragma once
-namespace Hazel
-{
+
 
 #ifdef WINDOWS
 #ifdef HAZEL_BUILD_API
@@ -11,4 +10,5 @@ namespace Hazel
 #else
 #error "Hazel engine only supports Windows"
 #endif
-}
+
+#define BIT(x) (1 << x)

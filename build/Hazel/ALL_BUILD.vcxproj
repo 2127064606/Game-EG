@@ -178,6 +178,14 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Project>{11E2C135-900E-3FC4-9AD8-9ECA49B5D9F1}</Project>
       <Name>HazelCore</Name>
     </ProjectReference>
+    <ProjectReference Include="C:\vscode-workplace\c\Hazel\build\Hazel\glad.vcxproj">
+      <Project>{53F75BB2-6222-371B-8560-479DC5D2CEFC}</Project>
+      <Name>glad</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\vscode-workplace\c\Hazel\build\Hazel\submodule\glfw\src\glfw.vcxproj">
+      <Project>{D2B0829A-85F7-3F81-A589-D25563B2D6FB}</Project>
+      <Name>glfw</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

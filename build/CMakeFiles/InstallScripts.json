@@ -3,6 +3,9 @@
 	[
 		"C:/vscode-workplace/c/Hazel/build/cmake_install.cmake",
 		"C:/vscode-workplace/c/Hazel/build/Hazel/cmake_install.cmake",
+		"C:/vscode-workplace/c/Hazel/build/Hazel/submodule/glfw/cmake_install.cmake",
+		"C:/vscode-workplace/c/Hazel/build/Hazel/submodule/glfw/src/cmake_install.cmake",
+		"C:/vscode-workplace/c/Hazel/build/Hazel/submodule/glfw/docs/cmake_install.cmake",
 		"C:/vscode-workplace/c/Hazel/build/SandBox/cmake_install.cmake"
 	],
 	"Parallel" : false

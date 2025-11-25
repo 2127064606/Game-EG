@@ -2,16 +2,43 @@ project(Hazel_core)
 
 cmake_minimum_required(VERSION 3.10)
 
+add_library(glad STATIC
+    ${PROJECT_SOURCE_DIR}/submodule/glad/src/glad.c
+)
+
 add_library(HazelCore SHARED
     src/Hazel/Application.cpp
+    src/Hazel/Log.cpp
+    src/Hazel/Window.cpp
+    src/Platform/Windows/WindowsWindow.cpp
 )
+if(MSVC)
+    target_compile_options(HazelCore PRIVATE /utf-8)
+endif()
 
 target_include_directories(HazelCore
     PUBLIC
         ${CMAKE_CURRENT_SOURCE_DIR}/src
+        ${PROJECT_SOURCE_DIR}/submodule/spdlog/include
+        ${PROJECT_SOURCE_DIR}/submodule/glfw/include
+        ${PROJECT_SOURCE_DIR}/submodule/glad/include
 )
 
+target_include_directories(glad
+    PUBLIC
+        ${PROJECT_SOURCE_DIR}/submodule/glad/include
+)
 target_compile_definitions(HazelCore PRIVATE HAZEL_BUILD_API WINDOWS)
+
+target_precompile_headers(HazelCore PRIVATE src/PreHeader.hpp)
+
+
+
+
+
+add_subdirectory(${PROJECT_SOURCE_DIR}/submodule/glfw)
+target_link_libraries(HazelCore PRIVATE glfw glad opengl32)
+
 
 
 set_target_properties(HazelCore PROPERTIES

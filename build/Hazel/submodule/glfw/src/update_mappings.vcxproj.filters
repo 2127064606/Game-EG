@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\vscode-workplace\c\Hazel\build\CMakeFiles\c1dfd1bf8c6ccf46c7aa8dd9c34fafc4\update_mappings.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\vscode-workplace\c\Hazel\Hazel\submodule\glfw\src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\vscode-workplace\c\Hazel\Hazel\submodule\glfw\src\mappings.h.in">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\vscode-workplace\c\Hazel\Hazel\submodule\glfw\CMake\GenerateMappings.cmake" />
+    <None Include="C:\vscode-workplace\c\Hazel\build\Hazel\submodule\glfw\src\CMakeFiles\update_mappings" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{196ACBD5-E7A4-33B7-8822-A8408CA325A1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{1715BAD5-D3FA-33C8-8589-A808D0864885}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,1 +1,5 @@
+C:\vscode-workplace\c\Hazel\build\Hazel\CMakeFiles\HazelCore.dir\cmake_pch.cxx;C:\vscode-workplace\c\Hazel\build\Hazel\HazelCore.dir\Debug\cmake_pch.obj
 C:\vscode-workplace\c\Hazel\Hazel\src\Hazel\Application.cpp;C:\vscode-workplace\c\Hazel\build\Hazel\HazelCore.dir\Debug\Application.obj
+C:\vscode-workplace\c\Hazel\Hazel\src\Hazel\Log.cpp;C:\vscode-workplace\c\Hazel\build\Hazel\HazelCore.dir\Debug\Log.obj
+C:\vscode-workplace\c\Hazel\Hazel\src\Hazel\Window.cpp;C:\vscode-workplace\c\Hazel\build\Hazel\HazelCore.dir\Debug\Window.obj
+C:\vscode-workplace\c\Hazel\Hazel\src\Platform\Windows\WindowsWindow.cpp;C:\vscode-workplace\c\Hazel\build\Hazel\HazelCore.dir\Debug\WindowsWindow.obj

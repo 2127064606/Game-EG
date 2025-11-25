@@ -1,6 +1,17 @@
+C:/vscode-workplace/c/Hazel/build/CMakeFiles/INSTALL.dir
 C:/vscode-workplace/c/Hazel/build/CMakeFiles/ALL_BUILD.dir
 C:/vscode-workplace/c/Hazel/build/CMakeFiles/ZERO_CHECK.dir
+C:/vscode-workplace/c/Hazel/build/Hazel/CMakeFiles/glad.dir
 C:/vscode-workplace/c/Hazel/build/Hazel/CMakeFiles/HazelCore.dir
+C:/vscode-workplace/c/Hazel/build/Hazel/CMakeFiles/INSTALL.dir
 C:/vscode-workplace/c/Hazel/build/Hazel/CMakeFiles/ALL_BUILD.dir
+C:/vscode-workplace/c/Hazel/build/Hazel/submodule/glfw/CMakeFiles/uninstall.dir
+C:/vscode-workplace/c/Hazel/build/Hazel/submodule/glfw/CMakeFiles/INSTALL.dir
+C:/vscode-workplace/c/Hazel/build/Hazel/submodule/glfw/CMakeFiles/ALL_BUILD.dir
+C:/vscode-workplace/c/Hazel/build/Hazel/submodule/glfw/src/CMakeFiles/glfw.dir
+C:/vscode-workplace/c/Hazel/build/Hazel/submodule/glfw/src/CMakeFiles/update_mappings.dir
+C:/vscode-workplace/c/Hazel/build/Hazel/submodule/glfw/src/CMakeFiles/INSTALL.dir
+C:/vscode-workplace/c/Hazel/build/Hazel/submodule/glfw/docs/CMakeFiles/INSTALL.dir
 C:/vscode-workplace/c/Hazel/build/SandBox/CMakeFiles/SandBox.dir
+C:/vscode-workplace/c/Hazel/build/SandBox/CMakeFiles/INSTALL.dir
 C:/vscode-workplace/c/Hazel/build/SandBox/CMakeFiles/ALL_BUILD.dir

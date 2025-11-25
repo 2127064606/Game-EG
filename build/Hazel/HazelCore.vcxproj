@@ -87,7 +87,8 @@
   <PropertyGroup />
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\vscode-workplace\c\Hazel\Hazel\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\vscode-workplace\c\Hazel\Hazel\src;C:\vscode-workplace\c\Hazel\Hazel\submodule\spdlog\include;C:\vscode-workplace\c\Hazel\Hazel\submodule\glfw\include;C:\vscode-workplace\c\Hazel\Hazel\submodule\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -97,7 +98,9 @@
       <LanguageStandard>stdcpp17</LanguageStandard>
       <MinimalRebuild></MinimalRebuild>
       <Optimization>Disabled</Optimization>
-      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>C:/vscode-workplace/c/Hazel/build/Hazel/CMakeFiles/HazelCore.dir/Debug/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>C:/vscode-workplace/c/Hazel/build/Hazel/HazelCore.dir/Debug/cmake_pch.pch</PrecompiledHeaderOutputFile>
       <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
@@ -111,10 +114,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;HAZEL_BUILD_API;WINDOWS;CMAKE_INTDIR=\"Debug\";HazelCore_EXPORTS</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\vscode-workplace\c\Hazel\Hazel\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\vscode-workplace\c\Hazel\Hazel\src;C:\vscode-workplace\c\Hazel\Hazel\submodule\spdlog\include;C:\vscode-workplace\c\Hazel\Hazel\submodule\glfw\include;C:\vscode-workplace\c\Hazel\Hazel\submodule\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\vscode-workplace\c\Hazel\Hazel\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\vscode-workplace\c\Hazel\Hazel\src;C:\vscode-workplace\c\Hazel\Hazel\submodule\spdlog\include;C:\vscode-workplace\c\Hazel\Hazel\submodule\glfw\include;C:\vscode-workplace\c\Hazel\Hazel\submodule\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -122,7 +125,7 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>submodule\glfw\src\Debug\glfw3.lib;Debug\glad.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <DataExecutionPrevention></DataExecutionPrevention>
@@ -141,7 +144,8 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\vscode-workplace\c\Hazel\Hazel\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\vscode-workplace\c\Hazel\Hazel\src;C:\vscode-workplace\c\Hazel\Hazel\submodule\spdlog\include;C:\vscode-workplace\c\Hazel\Hazel\submodule\glfw\include;C:\vscode-workplace\c\Hazel\Hazel\submodule\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -150,7 +154,9 @@
       <LanguageStandard>stdcpp17</LanguageStandard>
       <MinimalRebuild></MinimalRebuild>
       <Optimization>MaxSpeed</Optimization>
-      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>C:/vscode-workplace/c/Hazel/build/Hazel/CMakeFiles/HazelCore.dir/Release/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>C:/vscode-workplace/c/Hazel/build/Hazel/HazelCore.dir/Release/cmake_pch.pch</PrecompiledHeaderOutputFile>
       <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
@@ -166,10 +172,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;HAZEL_BUILD_API;WINDOWS;CMAKE_INTDIR=\"Release\";HazelCore_EXPORTS</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\vscode-workplace\c\Hazel\Hazel\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\vscode-workplace\c\Hazel\Hazel\src;C:\vscode-workplace\c\Hazel\Hazel\submodule\spdlog\include;C:\vscode-workplace\c\Hazel\Hazel\submodule\glfw\include;C:\vscode-workplace\c\Hazel\Hazel\submodule\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\vscode-workplace\c\Hazel\Hazel\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\vscode-workplace\c\Hazel\Hazel\src;C:\vscode-workplace\c\Hazel\Hazel\submodule\spdlog\include;C:\vscode-workplace\c\Hazel\Hazel\submodule\glfw\include;C:\vscode-workplace\c\Hazel\Hazel\submodule\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -177,7 +183,7 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>submodule\glfw\src\Release\glfw3.lib;Release\glad.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <DataExecutionPrevention></DataExecutionPrevention>
@@ -196,7 +202,8 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\vscode-workplace\c\Hazel\Hazel\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\vscode-workplace\c\Hazel\Hazel\src;C:\vscode-workplace\c\Hazel\Hazel\submodule\spdlog\include;C:\vscode-workplace\c\Hazel\Hazel\submodule\glfw\include;C:\vscode-workplace\c\Hazel\Hazel\submodule\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -205,7 +212,9 @@
       <LanguageStandard>stdcpp17</LanguageStandard>
       <MinimalRebuild></MinimalRebuild>
       <Optimization>MinSpace</Optimization>
-      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>C:/vscode-workplace/c/Hazel/build/Hazel/CMakeFiles/HazelCore.dir/MinSizeRel/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>C:/vscode-workplace/c/Hazel/build/Hazel/HazelCore.dir/MinSizeRel/cmake_pch.pch</PrecompiledHeaderOutputFile>
       <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
@@ -221,10 +230,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;HAZEL_BUILD_API;WINDOWS;CMAKE_INTDIR=\"MinSizeRel\";HazelCore_EXPORTS</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\vscode-workplace\c\Hazel\Hazel\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\vscode-workplace\c\Hazel\Hazel\src;C:\vscode-workplace\c\Hazel\Hazel\submodule\spdlog\include;C:\vscode-workplace\c\Hazel\Hazel\submodule\glfw\include;C:\vscode-workplace\c\Hazel\Hazel\submodule\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\vscode-workplace\c\Hazel\Hazel\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\vscode-workplace\c\Hazel\Hazel\src;C:\vscode-workplace\c\Hazel\Hazel\submodule\spdlog\include;C:\vscode-workplace\c\Hazel\Hazel\submodule\glfw\include;C:\vscode-workplace\c\Hazel\Hazel\submodule\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -232,7 +241,7 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>submodule\glfw\src\MinSizeRel\glfw3.lib;MinSizeRel\glad.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <DataExecutionPrevention></DataExecutionPrevention>
@@ -251,7 +260,8 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\vscode-workplace\c\Hazel\Hazel\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\vscode-workplace\c\Hazel\Hazel\src;C:\vscode-workplace\c\Hazel\Hazel\submodule\spdlog\include;C:\vscode-workplace\c\Hazel\Hazel\submodule\glfw\include;C:\vscode-workplace\c\Hazel\Hazel\submodule\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -261,7 +271,9 @@
       <LanguageStandard>stdcpp17</LanguageStandard>
       <MinimalRebuild></MinimalRebuild>
       <Optimization>MaxSpeed</Optimization>
-      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>C:/vscode-workplace/c/Hazel/build/Hazel/CMakeFiles/HazelCore.dir/RelWithDebInfo/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>C:/vscode-workplace/c/Hazel/build/Hazel/HazelCore.dir/RelWithDebInfo/cmake_pch.pch</PrecompiledHeaderOutputFile>
       <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
@@ -275,10 +287,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;HAZEL_BUILD_API;WINDOWS;CMAKE_INTDIR=\"RelWithDebInfo\";HazelCore_EXPORTS</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\vscode-workplace\c\Hazel\Hazel\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\vscode-workplace\c\Hazel\Hazel\src;C:\vscode-workplace\c\Hazel\Hazel\submodule\spdlog\include;C:\vscode-workplace\c\Hazel\Hazel\submodule\glfw\include;C:\vscode-workplace\c\Hazel\Hazel\submodule\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\vscode-workplace\c\Hazel\Hazel\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\vscode-workplace\c\Hazel\Hazel\src;C:\vscode-workplace\c\Hazel\Hazel\submodule\spdlog\include;C:\vscode-workplace\c\Hazel\Hazel\submodule\glfw\include;C:\vscode-workplace\c\Hazel\Hazel\submodule\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -286,7 +298,7 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>submodule\glfw\src\RelWithDebInfo\glfw3.lib;RelWithDebInfo\glad.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <DataExecutionPrevention></DataExecutionPrevention>
@@ -361,7 +373,52 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="C:\vscode-workplace\c\Hazel\Hazel\src\Hazel\Application.cpp" />
+    <ClCompile Include="C:\vscode-workplace\c\Hazel\build\Hazel\CMakeFiles\HazelCore.dir\cmake_pch.cxx">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/vscode-workplace/c/Hazel/build/Hazel/CMakeFiles/HazelCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/vscode-workplace/c/Hazel/build/Hazel/CMakeFiles/HazelCore.dir/Debug/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/vscode-workplace/c/Hazel/build/Hazel/HazelCore.dir/Debug/cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/vscode-workplace/c/Hazel/build/Hazel/CMakeFiles/HazelCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/vscode-workplace/c/Hazel/build/Hazel/CMakeFiles/HazelCore.dir/Release/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/vscode-workplace/c/Hazel/build/Hazel/HazelCore.dir/Release/cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/vscode-workplace/c/Hazel/build/Hazel/CMakeFiles/HazelCore.dir/MinSizeRel/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/vscode-workplace/c/Hazel/build/Hazel/CMakeFiles/HazelCore.dir/MinSizeRel/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/vscode-workplace/c/Hazel/build/Hazel/HazelCore.dir/MinSizeRel/cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/vscode-workplace/c/Hazel/build/Hazel/CMakeFiles/HazelCore.dir/RelWithDebInfo/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/vscode-workplace/c/Hazel/build/Hazel/CMakeFiles/HazelCore.dir/RelWithDebInfo/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/vscode-workplace/c/Hazel/build/Hazel/HazelCore.dir/RelWithDebInfo/cmake_pch.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="C:\vscode-workplace\c\Hazel\Hazel\src\Hazel\Application.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/vscode-workplace/c/Hazel/build/Hazel/CMakeFiles/HazelCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/vscode-workplace/c/Hazel/build/Hazel/CMakeFiles/HazelCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/vscode-workplace/c/Hazel/build/Hazel/CMakeFiles/HazelCore.dir/MinSizeRel/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/vscode-workplace/c/Hazel/build/Hazel/CMakeFiles/HazelCore.dir/RelWithDebInfo/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\vscode-workplace\c\Hazel\Hazel\src\Hazel\Log.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/vscode-workplace/c/Hazel/build/Hazel/CMakeFiles/HazelCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/vscode-workplace/c/Hazel/build/Hazel/CMakeFiles/HazelCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/vscode-workplace/c/Hazel/build/Hazel/CMakeFiles/HazelCore.dir/MinSizeRel/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/vscode-workplace/c/Hazel/build/Hazel/CMakeFiles/HazelCore.dir/RelWithDebInfo/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\vscode-workplace\c\Hazel\Hazel\src\Hazel\Window.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/vscode-workplace/c/Hazel/build/Hazel/CMakeFiles/HazelCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/vscode-workplace/c/Hazel/build/Hazel/CMakeFiles/HazelCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/vscode-workplace/c/Hazel/build/Hazel/CMakeFiles/HazelCore.dir/MinSizeRel/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/vscode-workplace/c/Hazel/build/Hazel/CMakeFiles/HazelCore.dir/RelWithDebInfo/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\vscode-workplace\c\Hazel\Hazel\src\Platform\Windows\WindowsWindow.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/vscode-workplace/c/Hazel/build/Hazel/CMakeFiles/HazelCore.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/vscode-workplace/c/Hazel/build/Hazel/CMakeFiles/HazelCore.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/vscode-workplace/c/Hazel/build/Hazel/CMakeFiles/HazelCore.dir/MinSizeRel/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/vscode-workplace/c/Hazel/build/Hazel/CMakeFiles/HazelCore.dir/RelWithDebInfo/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="C:\vscode-workplace\c\Hazel\build\Hazel\CMakeFiles\HazelCore.dir\Debug\cmake_pch.hxx" />
+    <ClInclude Include="C:\vscode-workplace\c\Hazel\build\Hazel\CMakeFiles\HazelCore.dir\Release\cmake_pch.hxx" />
+    <ClInclude Include="C:\vscode-workplace\c\Hazel\build\Hazel\CMakeFiles\HazelCore.dir\MinSizeRel\cmake_pch.hxx" />
+    <ClInclude Include="C:\vscode-workplace\c\Hazel\build\Hazel\CMakeFiles\HazelCore.dir\RelWithDebInfo\cmake_pch.hxx" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
@@ -370,6 +427,14 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\vscode-workplace\c\Hazel\build\Hazel\glad.vcxproj">
+      <Project>{53F75BB2-6222-371B-8560-479DC5D2CEFC}</Project>
+      <Name>glad</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\vscode-workplace\c\Hazel\build\Hazel\submodule\glfw\src\glfw.vcxproj">
+      <Project>{D2B0829A-85F7-3F81-A589-D25563B2D6FB}</Project>
+      <Name>glfw</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

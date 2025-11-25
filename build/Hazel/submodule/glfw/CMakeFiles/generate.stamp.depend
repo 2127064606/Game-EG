@@ -1,0 +1,16 @@
+# CMake generation dependency list for this directory.
+C:/cmake-4.1.0-windows-x86_64/cmake-4.1.0-windows-x86_64/share/cmake-4.1/Modules/BasicConfigVersion-SameMajorVersion.cmake.in
+C:/cmake-4.1.0-windows-x86_64/cmake-4.1.0-windows-x86_64/share/cmake-4.1/Modules/CMakeDependentOption.cmake
+C:/cmake-4.1.0-windows-x86_64/cmake-4.1.0-windows-x86_64/share/cmake-4.1/Modules/CMakePackageConfigHelpers.cmake
+C:/cmake-4.1.0-windows-x86_64/cmake-4.1.0-windows-x86_64/share/cmake-4.1/Modules/CheckCSourceCompiles.cmake
+C:/cmake-4.1.0-windows-x86_64/cmake-4.1.0-windows-x86_64/share/cmake-4.1/Modules/CheckIncludeFile.cmake
+C:/cmake-4.1.0-windows-x86_64/cmake-4.1.0-windows-x86_64/share/cmake-4.1/Modules/CheckLibraryExists.cmake
+C:/cmake-4.1.0-windows-x86_64/cmake-4.1.0-windows-x86_64/share/cmake-4.1/Modules/FindPackageHandleStandardArgs.cmake
+C:/cmake-4.1.0-windows-x86_64/cmake-4.1.0-windows-x86_64/share/cmake-4.1/Modules/FindPackageMessage.cmake
+C:/cmake-4.1.0-windows-x86_64/cmake-4.1.0-windows-x86_64/share/cmake-4.1/Modules/FindThreads.cmake
+C:/cmake-4.1.0-windows-x86_64/cmake-4.1.0-windows-x86_64/share/cmake-4.1/Modules/GNUInstallDirs.cmake
+C:/cmake-4.1.0-windows-x86_64/cmake-4.1.0-windows-x86_64/share/cmake-4.1/Modules/Internal/CheckSourceCompiles.cmake
+C:/cmake-4.1.0-windows-x86_64/cmake-4.1.0-windows-x86_64/share/cmake-4.1/Modules/WriteBasicConfigVersionFile.cmake
+C:/vscode-workplace/c/Hazel/Hazel/submodule/glfw/CMake/cmake_uninstall.cmake.in
+C:/vscode-workplace/c/Hazel/Hazel/submodule/glfw/CMake/glfw3Config.cmake.in
+C:/vscode-workplace/c/Hazel/Hazel/submodule/glfw/CMakeLists.txt

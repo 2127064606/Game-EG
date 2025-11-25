@@ -1662,3 +1662,528 @@ events:
       Microsoft (R) Incremental Linker Version 14.44.35219.0
       Copyright (C) Microsoft Corporation.  All rights reserved.
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/cmake-4.1.0-windows-x86_64/cmake-4.1.0-windows-x86_64/share/cmake-4.1/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "C:/cmake-4.1.0-windows-x86_64/cmake-4.1.0-windows-x86_64/share/cmake-4.1/Modules/CheckCSourceCompiles.cmake:103 (cmake_check_source_compiles)"
+      - "C:/cmake-4.1.0-windows-x86_64/cmake-4.1.0-windows-x86_64/share/cmake-4.1/Modules/FindThreads.cmake:97 (check_c_source_compiles)"
+      - "C:/cmake-4.1.0-windows-x86_64/cmake-4.1.0-windows-x86_64/share/cmake-4.1/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "Hazel/submodule/glfw/CMakeLists.txt:52 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "C:/vscode-workplace/c/Hazel/build/CMakeFiles/CMakeScratch/TryCompile-pzs9hu"
+      binary: "C:/vscode-workplace/c/Hazel/build/CMakeFiles/CMakeScratch/TryCompile-pzs9hu"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/vscode-workplace/c/Hazel/Hazel/submodule/glfw/CMake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/vscode-workplace/c/Hazel/build/CMakeFiles/CMakeScratch/TryCompile-pzs9hu'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_bfea6.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        閫傜敤浜?.NET Framework MSBuild 鐗堟湰 17.14.23+b0019275e
+        鐢熸垚鍚姩鏃堕棿涓?2025/11/23 19:50:03銆?
+        
+        鑺傜偣 1 涓婄殑椤圭洰鈥淐:\\vscode-workplace\\c\\Hazel\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pzs9hu\\cmTC_bfea6.vcxproj鈥?榛樿鐩爣)銆?
+        PrepareForBuild:
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_bfea6.dir\\Debug\\鈥濄€?
+          宸插惎鐢ㄧ粨鏋勫寲杈撳嚭銆傜紪璇戝櫒璇婃柇鐨勬牸寮忚缃皢鍙嶆槧閿欒灞傛缁撴瀯銆傛湁鍏宠缁嗕俊鎭紝璇峰弬闃?https://aka.ms/cpp/structured-output銆?
+          姝ｅ湪鍒涘缓鐩綍鈥淐:\\vscode-workplace\\c\\Hazel\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pzs9hu\\Debug\\鈥濄€?
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_bfea6.dir\\Debug\\cmTC_bfea6.tlog\\鈥濄€?
+        InitializeBuildStatus:
+          姝ｅ湪鍒涘缓鈥渃mTC_bfea6.dir\\Debug\\cmTC_bfea6.tlog\\unsuccessfulbuild鈥濓紝鍥犱负宸叉寚瀹氣€淎lwaysCreate鈥濄€?
+          姝ｅ湪瀵光€渃mTC_bfea6.dir\\Debug\\cmTC_bfea6.tlog\\unsuccessfulbuild鈥濇墽琛?Touch 浠诲姟銆?
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_bfea6.dir\\Debug\\\\" /Fd"cmTC_bfea6.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\vscode-workplace\\c\\Hazel\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pzs9hu\\src.c"
+          鐢ㄤ簬 x64 鐨?Microsoft (R) C/C++ 浼樺寲缂栬瘧鍣?19.44.35219 鐗?
+          鐗堟潈鎵€鏈?C) Microsoft Corporation銆備繚鐣欐墍鏈夋潈鍒┿€?
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_bfea6.dir\\Debug\\\\" /Fd"cmTC_bfea6.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\vscode-workplace\\c\\Hazel\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pzs9hu\\src.c"
+          src.c
+        C:\\vscode-workplace\\c\\Hazel\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pzs9hu\\src.c(1,10): error C1083: 鏃犳硶鎵撳紑鍖呮嫭鏂囦欢: 鈥減thread.h鈥? No such file or directory [C:\\vscode-workplace\\c\\Hazel\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pzs9hu\\cmTC_bfea6.vcxproj]
+        宸插畬鎴愮敓鎴愰」鐩€淐:\\vscode-workplace\\c\\Hazel\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pzs9hu\\cmTC_bfea6.vcxproj鈥?榛樿鐩爣)鐨勬搷浣?- 澶辫触銆?
+        
+        鐢熸垚澶辫触銆?
+        
+        鈥淐:\\vscode-workplace\\c\\Hazel\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pzs9hu\\cmTC_bfea6.vcxproj鈥?榛樿鐩爣) (1) ->
+        (ClCompile 鐩爣) -> 
+          C:\\vscode-workplace\\c\\Hazel\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pzs9hu\\src.c(1,10): error C1083: 鏃犳硶鎵撳紑鍖呮嫭鏂囦欢: 鈥減thread.h鈥? No such file or directory [C:\\vscode-workplace\\c\\Hazel\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pzs9hu\\cmTC_bfea6.vcxproj]
+        
+            0 涓鍛?
+            1 涓敊璇?
+        
+        宸茬敤鏃堕棿 00:00:00.27
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/cmake-4.1.0-windows-x86_64/cmake-4.1.0-windows-x86_64/share/cmake-4.1/Modules/CheckLibraryExists.cmake:154 (try_compile)"
+      - "C:/cmake-4.1.0-windows-x86_64/cmake-4.1.0-windows-x86_64/share/cmake-4.1/Modules/FindThreads.cmake:112 (check_library_exists)"
+      - "C:/cmake-4.1.0-windows-x86_64/cmake-4.1.0-windows-x86_64/share/cmake-4.1/Modules/FindThreads.cmake:175 (_threads_check_lib)"
+      - "Hazel/submodule/glfw/CMakeLists.txt:52 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthreads"
+    directories:
+      source: "C:/vscode-workplace/c/Hazel/build/CMakeFiles/CMakeScratch/TryCompile-86hb0x"
+      binary: "C:/vscode-workplace/c/Hazel/build/CMakeFiles/CMakeScratch/TryCompile-86hb0x"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/vscode-workplace/c/Hazel/Hazel/submodule/glfw/CMake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREADS_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/vscode-workplace/c/Hazel/build/CMakeFiles/CMakeScratch/TryCompile-86hb0x'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_c6191.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        閫傜敤浜?.NET Framework MSBuild 鐗堟湰 17.14.23+b0019275e
+        鐢熸垚鍚姩鏃堕棿涓?2025/11/23 19:50:03銆?
+        
+        鑺傜偣 1 涓婄殑椤圭洰鈥淐:\\vscode-workplace\\c\\Hazel\\build\\CMakeFiles\\CMakeScratch\\TryCompile-86hb0x\\cmTC_c6191.vcxproj鈥?榛樿鐩爣)銆?
+        PrepareForBuild:
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_c6191.dir\\Debug\\鈥濄€?
+          宸插惎鐢ㄧ粨鏋勫寲杈撳嚭銆傜紪璇戝櫒璇婃柇鐨勬牸寮忚缃皢鍙嶆槧閿欒灞傛缁撴瀯銆傛湁鍏宠缁嗕俊鎭紝璇峰弬闃?https://aka.ms/cpp/structured-output銆?
+          姝ｅ湪鍒涘缓鐩綍鈥淐:\\vscode-workplace\\c\\Hazel\\build\\CMakeFiles\\CMakeScratch\\TryCompile-86hb0x\\Debug\\鈥濄€?
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_c6191.dir\\Debug\\cmTC_c6191.tlog\\鈥濄€?
+        InitializeBuildStatus:
+          姝ｅ湪鍒涘缓鈥渃mTC_c6191.dir\\Debug\\cmTC_c6191.tlog\\unsuccessfulbuild鈥濓紝鍥犱负宸叉寚瀹氣€淎lwaysCreate鈥濄€?
+          姝ｅ湪瀵光€渃mTC_c6191.dir\\Debug\\cmTC_c6191.tlog\\unsuccessfulbuild鈥濇墽琛?Touch 浠诲姟銆?
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_c6191.dir\\Debug\\\\" /Fd"cmTC_c6191.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\vscode-workplace\\c\\Hazel\\build\\CMakeFiles\\CMakeScratch\\TryCompile-86hb0x\\CheckFunctionExists.c"
+          鐢ㄤ簬 x64 鐨?Microsoft (R) C/C++ 浼樺寲缂栬瘧鍣?19.44.35219 鐗?
+          鐗堟潈鎵€鏈?C) Microsoft Corporation銆備繚鐣欐墍鏈夋潈鍒┿€?
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_c6191.dir\\Debug\\\\" /Fd"cmTC_c6191.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\vscode-workplace\\c\\Hazel\\build\\CMakeFiles\\CMakeScratch\\TryCompile-86hb0x\\CheckFunctionExists.c"
+          CheckFunctionExists.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\vscode-workplace\\c\\Hazel\\build\\CMakeFiles\\CMakeScratch\\TryCompile-86hb0x\\Debug\\cmTC_c6191.exe" /INCREMENTAL /ILK:"cmTC_c6191.dir\\Debug\\cmTC_c6191.ilk" /NOLOGO pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/vscode-workplace/c/Hazel/build/CMakeFiles/CMakeScratch/TryCompile-86hb0x/Debug/cmTC_c6191.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/vscode-workplace/c/Hazel/build/CMakeFiles/CMakeScratch/TryCompile-86hb0x/Debug/cmTC_c6191.lib" /MACHINE:X64  /machine:x64 cmTC_c6191.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: 鏃犳硶鎵撳紑鏂囦欢鈥減threads.lib鈥?[C:\\vscode-workplace\\c\\Hazel\\build\\CMakeFiles\\CMakeScratch\\TryCompile-86hb0x\\cmTC_c6191.vcxproj]
+        宸插畬鎴愮敓鎴愰」鐩€淐:\\vscode-workplace\\c\\Hazel\\build\\CMakeFiles\\CMakeScratch\\TryCompile-86hb0x\\cmTC_c6191.vcxproj鈥?榛樿鐩爣)鐨勬搷浣?- 澶辫触銆?
+        
+        鐢熸垚澶辫触銆?
+        
+        鈥淐:\\vscode-workplace\\c\\Hazel\\build\\CMakeFiles\\CMakeScratch\\TryCompile-86hb0x\\cmTC_c6191.vcxproj鈥?榛樿鐩爣) (1) ->
+        (Link 鐩爣) -> 
+          LINK : fatal error LNK1104: 鏃犳硶鎵撳紑鏂囦欢鈥減threads.lib鈥?[C:\\vscode-workplace\\c\\Hazel\\build\\CMakeFiles\\CMakeScratch\\TryCompile-86hb0x\\cmTC_c6191.vcxproj]
+        
+            0 涓鍛?
+            1 涓敊璇?
+        
+        宸茬敤鏃堕棿 00:00:00.31
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/cmake-4.1.0-windows-x86_64/cmake-4.1.0-windows-x86_64/share/cmake-4.1/Modules/CheckLibraryExists.cmake:154 (try_compile)"
+      - "C:/cmake-4.1.0-windows-x86_64/cmake-4.1.0-windows-x86_64/share/cmake-4.1/Modules/FindThreads.cmake:112 (check_library_exists)"
+      - "C:/cmake-4.1.0-windows-x86_64/cmake-4.1.0-windows-x86_64/share/cmake-4.1/Modules/FindThreads.cmake:176 (_threads_check_lib)"
+      - "Hazel/submodule/glfw/CMakeLists.txt:52 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthread"
+    directories:
+      source: "C:/vscode-workplace/c/Hazel/build/CMakeFiles/CMakeScratch/TryCompile-5h77at"
+      binary: "C:/vscode-workplace/c/Hazel/build/CMakeFiles/CMakeScratch/TryCompile-5h77at"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/vscode-workplace/c/Hazel/Hazel/submodule/glfw/CMake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREAD_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/vscode-workplace/c/Hazel/build/CMakeFiles/CMakeScratch/TryCompile-5h77at'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_90b72.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        閫傜敤浜?.NET Framework MSBuild 鐗堟湰 17.14.23+b0019275e
+        鐢熸垚鍚姩鏃堕棿涓?2025/11/23 19:50:04銆?
+        
+        鑺傜偣 1 涓婄殑椤圭洰鈥淐:\\vscode-workplace\\c\\Hazel\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5h77at\\cmTC_90b72.vcxproj鈥?榛樿鐩爣)銆?
+        PrepareForBuild:
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_90b72.dir\\Debug\\鈥濄€?
+          宸插惎鐢ㄧ粨鏋勫寲杈撳嚭銆傜紪璇戝櫒璇婃柇鐨勬牸寮忚缃皢鍙嶆槧閿欒灞傛缁撴瀯銆傛湁鍏宠缁嗕俊鎭紝璇峰弬闃?https://aka.ms/cpp/structured-output銆?
+          姝ｅ湪鍒涘缓鐩綍鈥淐:\\vscode-workplace\\c\\Hazel\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5h77at\\Debug\\鈥濄€?
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_90b72.dir\\Debug\\cmTC_90b72.tlog\\鈥濄€?
+        InitializeBuildStatus:
+          姝ｅ湪鍒涘缓鈥渃mTC_90b72.dir\\Debug\\cmTC_90b72.tlog\\unsuccessfulbuild鈥濓紝鍥犱负宸叉寚瀹氣€淎lwaysCreate鈥濄€?
+          姝ｅ湪瀵光€渃mTC_90b72.dir\\Debug\\cmTC_90b72.tlog\\unsuccessfulbuild鈥濇墽琛?Touch 浠诲姟銆?
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_90b72.dir\\Debug\\\\" /Fd"cmTC_90b72.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\vscode-workplace\\c\\Hazel\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5h77at\\CheckFunctionExists.c"
+          鐢ㄤ簬 x64 鐨?Microsoft (R) C/C++ 浼樺寲缂栬瘧鍣?19.44.35219 鐗?
+          鐗堟潈鎵€鏈?C) Microsoft Corporation銆備繚鐣欐墍鏈夋潈鍒┿€?
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_90b72.dir\\Debug\\\\" /Fd"cmTC_90b72.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\vscode-workplace\\c\\Hazel\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5h77at\\CheckFunctionExists.c"
+          CheckFunctionExists.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\vscode-workplace\\c\\Hazel\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5h77at\\Debug\\cmTC_90b72.exe" /INCREMENTAL /ILK:"cmTC_90b72.dir\\Debug\\cmTC_90b72.ilk" /NOLOGO pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/vscode-workplace/c/Hazel/build/CMakeFiles/CMakeScratch/TryCompile-5h77at/Debug/cmTC_90b72.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/vscode-workplace/c/Hazel/build/CMakeFiles/CMakeScratch/TryCompile-5h77at/Debug/cmTC_90b72.lib" /MACHINE:X64  /machine:x64 cmTC_90b72.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: 鏃犳硶鎵撳紑鏂囦欢鈥減thread.lib鈥?[C:\\vscode-workplace\\c\\Hazel\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5h77at\\cmTC_90b72.vcxproj]
+        宸插畬鎴愮敓鎴愰」鐩€淐:\\vscode-workplace\\c\\Hazel\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5h77at\\cmTC_90b72.vcxproj鈥?榛樿鐩爣)鐨勬搷浣?- 澶辫触銆?
+        
+        鐢熸垚澶辫触銆?
+        
+        鈥淐:\\vscode-workplace\\c\\Hazel\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5h77at\\cmTC_90b72.vcxproj鈥?榛樿鐩爣) (1) ->
+        (Link 鐩爣) -> 
+          LINK : fatal error LNK1104: 鏃犳硶鎵撳紑鏂囦欢鈥減thread.lib鈥?[C:\\vscode-workplace\\c\\Hazel\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5h77at\\cmTC_90b72.vcxproj]
+        
+            0 涓鍛?
+            1 涓敊璇?
+        
+        宸茬敤鏃堕棿 00:00:00.32
+        
+      exitCode: 1
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/cmake-4.1.0-windows-x86_64/cmake-4.1.0-windows-x86_64/share/cmake-4.1/Modules/FindDoxygen.cmake:753 (find_program)"
+      - "C:/cmake-4.1.0-windows-x86_64/cmake-4.1.0-windows-x86_64/share/cmake-4.1/Modules/FindDoxygen.cmake:937 (_Doxygen_find_doxygen)"
+      - "Hazel/submodule/glfw/docs/CMakeLists.txt:39 (find_package)"
+    mode: "program"
+    variable: "DOXYGEN_EXECUTABLE"
+    description: "Doxygen documentation generation tool (https://www.doxygen.nl)"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "doxygen"
+    candidate_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Team Tools/DiagnosticsHub/Collector/"
+      - "C:/Program Files (x86)/Windows Kits/10/bin/10.0.22621.0/x64/"
+      - "C:/Program Files (x86)/Windows Kits/10/bin/x64/"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Msbuild/Current/Bin/amd64/"
+      - "C:/Windows/Microsoft.NET/Framework64/v4.0.30319/"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/Tools/"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/"
+      - "C:/anaconda/"
+      - "C:/anaconda/Library/mingw-w64/bin/"
+      - "C:/anaconda/Library/usr/bin/"
+      - "C:/anaconda/Library/bin/"
+      - "C:/anaconda/Scripts/"
+      - "C:/Program Files (x86)/VMware/VMware Workstation/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/"
+      - "C:/Users/Administrator/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Program Files/HP/OMEN-Broadcast/Common/"
+      - "C:/Users/wzj/project/nvm/"
+      - "C:/nvm4w/nodejs/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/mysql-9.3.0-winx64/mysql-9.3.0-winx64/bin/"
+      - "C:/Program Files/Java/jdk-11/bin/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/JetBrains/CLion 2025.1.3/bin/mingw/bin/"
+      - "C:/Users/wzj/.m2/wrapper/dists/apache-maven-3.9.10-bin/53h08a94dg6djh6umvruv7q564/apache-maven-3.9.10/bin/"
+      - "C:/Redis-x64-3.0.504/"
+      - "C:/Program Files (x86)/NetSarang/Xshell 8/"
+      - "C:/MinGw/mingw64/bin/"
+      - "C:/cmake-4.1.0-windows-x86_64/cmake-4.1.0-windows-x86_64/bin/"
+      - "C:/hadoop-3.3.0/hadoop-3.3.0/bin/"
+      - "C:/vscode-workplace/c/Hazel/build/%MSVC_HOME%/bin/Hostx64/x64/"
+      - "C:/Users/wzj/AppData/Local/Programs/Python/Python313/Scripts/"
+      - "C:/Users/wzj/AppData/Local/Programs/Python/Python313/"
+      - "C:/Users/wzj/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/wzj/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/wzj/app/Microsoft VS Code/bin/"
+      - "C:/Program Files/JetBrains/IntelliJ IDEA 2025.1.3/bin/"
+      - "C:/Users/wzj/AppData/Roaming/npm/"
+      - "C:/Program Files/JetBrains/CLion 2025.1.3/bin/"
+      - "C:/Program Files/JetBrains/JetBrains Rider 2025.1.4/bin/"
+      - "C:/Program Files/JetBrains/DataGrip 2025.1.3/bin/"
+      - "C:/Program Files/JetBrains/PyCharm 2025.1.3/bin/"
+      - "C:/Program Files/bin/"
+      - "C:/Program Files/sbin/"
+      - "C:/Program Files/"
+      - "C:/Program Files (x86)/bin/"
+      - "C:/Program Files (x86)/sbin/"
+      - "C:/Program Files (x86)/"
+      - "C:/cmake-4.1.0-windows-x86_64/cmake-4.1.0-windows-x86_64/bin/"
+      - "C:/cmake-4.1.0-windows-x86_64/cmake-4.1.0-windows-x86_64/sbin/"
+      - "C:/cmake-4.1.0-windows-x86_64/cmake-4.1.0-windows-x86_64/"
+      - "C:/Program Files/Hazel/bin/"
+      - "C:/Program Files/Hazel/sbin/"
+      - "C:/Program Files/Hazel/"
+      - "/REGISTRY-NOTFOUND/bin/"
+      - "/Applications/Doxygen.app/Contents/Resources/"
+      - "/Applications/Doxygen.app/Contents/MacOS/"
+      - "/Applications/Utilities/Doxygen.app/Contents/Resources/"
+      - "/Applications/Utilities/Doxygen.app/Contents/MacOS/"
+    searched_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/doxygen.com"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/doxygen.exe"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/doxygen"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Team Tools/DiagnosticsHub/Collector/doxygen.com"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Team Tools/DiagnosticsHub/Collector/doxygen.exe"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Team Tools/DiagnosticsHub/Collector/doxygen"
+      - "C:/Program Files (x86)/Windows Kits/10/bin/10.0.22621.0/x64/doxygen.com"
+      - "C:/Program Files (x86)/Windows Kits/10/bin/10.0.22621.0/x64/doxygen.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/bin/10.0.22621.0/x64/doxygen"
+      - "C:/Program Files (x86)/Windows Kits/10/bin/x64/doxygen.com"
+      - "C:/Program Files (x86)/Windows Kits/10/bin/x64/doxygen.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/bin/x64/doxygen"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Msbuild/Current/Bin/amd64/doxygen.com"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Msbuild/Current/Bin/amd64/doxygen.exe"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Msbuild/Current/Bin/amd64/doxygen"
+      - "C:/Windows/Microsoft.NET/Framework64/v4.0.30319/doxygen.com"
+      - "C:/Windows/Microsoft.NET/Framework64/v4.0.30319/doxygen.exe"
+      - "C:/Windows/Microsoft.NET/Framework64/v4.0.30319/doxygen"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/doxygen.com"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/doxygen.exe"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/doxygen"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/Tools/doxygen.com"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/Tools/doxygen.exe"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/Tools/doxygen"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/doxygen.com"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/doxygen.exe"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/doxygen"
+      - "C:/anaconda/doxygen.com"
+      - "C:/anaconda/doxygen.exe"
+      - "C:/anaconda/doxygen"
+      - "C:/anaconda/Library/mingw-w64/bin/doxygen.com"
+      - "C:/anaconda/Library/mingw-w64/bin/doxygen.exe"
+      - "C:/anaconda/Library/mingw-w64/bin/doxygen"
+      - "C:/anaconda/Library/usr/bin/doxygen.com"
+      - "C:/anaconda/Library/usr/bin/doxygen.exe"
+      - "C:/anaconda/Library/usr/bin/doxygen"
+      - "C:/anaconda/Library/bin/doxygen.com"
+      - "C:/anaconda/Library/bin/doxygen.exe"
+      - "C:/anaconda/Library/bin/doxygen"
+      - "C:/anaconda/Scripts/doxygen.com"
+      - "C:/anaconda/Scripts/doxygen.exe"
+      - "C:/anaconda/Scripts/doxygen"
+      - "C:/Program Files (x86)/VMware/VMware Workstation/bin/doxygen.com"
+      - "C:/Program Files (x86)/VMware/VMware Workstation/bin/doxygen.exe"
+      - "C:/Program Files (x86)/VMware/VMware Workstation/bin/doxygen"
+      - "C:/Windows/System32/doxygen.com"
+      - "C:/Windows/System32/doxygen.exe"
+      - "C:/Windows/System32/doxygen"
+      - "C:/Windows/doxygen.com"
+      - "C:/Windows/doxygen.exe"
+      - "C:/Windows/doxygen"
+      - "C:/Windows/System32/wbem/doxygen.com"
+      - "C:/Windows/System32/wbem/doxygen.exe"
+      - "C:/Windows/System32/wbem/doxygen"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/doxygen.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/doxygen.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/doxygen"
+      - "C:/Windows/System32/OpenSSH/doxygen.com"
+      - "C:/Windows/System32/OpenSSH/doxygen.exe"
+      - "C:/Windows/System32/OpenSSH/doxygen"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/doxygen.com"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/doxygen.exe"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/doxygen"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/doxygen.com"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/doxygen.exe"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/doxygen"
+      - "C:/Users/Administrator/AppData/Local/Microsoft/WindowsApps/doxygen.com"
+      - "C:/Users/Administrator/AppData/Local/Microsoft/WindowsApps/doxygen.exe"
+      - "C:/Users/Administrator/AppData/Local/Microsoft/WindowsApps/doxygen"
+      - "C:/Program Files/HP/OMEN-Broadcast/Common/doxygen.com"
+      - "C:/Program Files/HP/OMEN-Broadcast/Common/doxygen.exe"
+      - "C:/Program Files/HP/OMEN-Broadcast/Common/doxygen"
+      - "C:/Users/wzj/project/nvm/doxygen.com"
+      - "C:/Users/wzj/project/nvm/doxygen.exe"
+      - "C:/Users/wzj/project/nvm/doxygen"
+      - "C:/nvm4w/nodejs/doxygen.com"
+      - "C:/nvm4w/nodejs/doxygen.exe"
+      - "C:/nvm4w/nodejs/doxygen"
+      - "C:/Program Files/Git/cmd/doxygen.com"
+      - "C:/Program Files/Git/cmd/doxygen.exe"
+      - "C:/Program Files/Git/cmd/doxygen"
+      - "C:/mysql-9.3.0-winx64/mysql-9.3.0-winx64/bin/doxygen.com"
+      - "C:/mysql-9.3.0-winx64/mysql-9.3.0-winx64/bin/doxygen.exe"
+      - "C:/mysql-9.3.0-winx64/mysql-9.3.0-winx64/bin/doxygen"
+      - "C:/Program Files/Java/jdk-11/bin/doxygen.com"
+      - "C:/Program Files/Java/jdk-11/bin/doxygen.exe"
+      - "C:/Program Files/Java/jdk-11/bin/doxygen"
+      - "C:/Program Files/nodejs/doxygen.com"
+      - "C:/Program Files/nodejs/doxygen.exe"
+      - "C:/Program Files/nodejs/doxygen"
+      - "C:/Program Files/JetBrains/CLion 2025.1.3/bin/mingw/bin/doxygen.com"
+      - "C:/Program Files/JetBrains/CLion 2025.1.3/bin/mingw/bin/doxygen.exe"
+      - "C:/Program Files/JetBrains/CLion 2025.1.3/bin/mingw/bin/doxygen"
+      - "C:/Users/wzj/.m2/wrapper/dists/apache-maven-3.9.10-bin/53h08a94dg6djh6umvruv7q564/apache-maven-3.9.10/bin/doxygen.com"
+      - "C:/Users/wzj/.m2/wrapper/dists/apache-maven-3.9.10-bin/53h08a94dg6djh6umvruv7q564/apache-maven-3.9.10/bin/doxygen.exe"
+      - "C:/Users/wzj/.m2/wrapper/dists/apache-maven-3.9.10-bin/53h08a94dg6djh6umvruv7q564/apache-maven-3.9.10/bin/doxygen"
+      - "C:/Redis-x64-3.0.504/doxygen.com"
+      - "C:/Redis-x64-3.0.504/doxygen.exe"
+      - "C:/Redis-x64-3.0.504/doxygen"
+      - "C:/Program Files (x86)/NetSarang/Xshell 8/doxygen.com"
+      - "C:/Program Files (x86)/NetSarang/Xshell 8/doxygen.exe"
+      - "C:/Program Files (x86)/NetSarang/Xshell 8/doxygen"
+      - "C:/MinGw/mingw64/bin/doxygen.com"
+      - "C:/MinGw/mingw64/bin/doxygen.exe"
+      - "C:/MinGw/mingw64/bin/doxygen"
+      - "C:/cmake-4.1.0-windows-x86_64/cmake-4.1.0-windows-x86_64/bin/doxygen.com"
+      - "C:/cmake-4.1.0-windows-x86_64/cmake-4.1.0-windows-x86_64/bin/doxygen.exe"
+      - "C:/cmake-4.1.0-windows-x86_64/cmake-4.1.0-windows-x86_64/bin/doxygen"
+      - "C:/hadoop-3.3.0/hadoop-3.3.0/bin/doxygen.com"
+      - "C:/hadoop-3.3.0/hadoop-3.3.0/bin/doxygen.exe"
+      - "C:/hadoop-3.3.0/hadoop-3.3.0/bin/doxygen"
+      - "C:/vscode-workplace/c/Hazel/build/%MSVC_HOME%/bin/Hostx64/x64/doxygen.com"
+      - "C:/vscode-workplace/c/Hazel/build/%MSVC_HOME%/bin/Hostx64/x64/doxygen.exe"
+      - "C:/vscode-workplace/c/Hazel/build/%MSVC_HOME%/bin/Hostx64/x64/doxygen"
+      - "C:/Users/wzj/AppData/Local/Programs/Python/Python313/Scripts/doxygen.com"
+      - "C:/Users/wzj/AppData/Local/Programs/Python/Python313/Scripts/doxygen.exe"
+      - "C:/Users/wzj/AppData/Local/Programs/Python/Python313/Scripts/doxygen"
+      - "C:/Users/wzj/AppData/Local/Programs/Python/Python313/doxygen.com"
+      - "C:/Users/wzj/AppData/Local/Programs/Python/Python313/doxygen.exe"
+      - "C:/Users/wzj/AppData/Local/Programs/Python/Python313/doxygen"
+      - "C:/Users/wzj/AppData/Local/Programs/Python/Launcher/doxygen.com"
+      - "C:/Users/wzj/AppData/Local/Programs/Python/Launcher/doxygen.exe"
+      - "C:/Users/wzj/AppData/Local/Programs/Python/Launcher/doxygen"
+      - "C:/Users/wzj/AppData/Local/Microsoft/WindowsApps/doxygen.com"
+      - "C:/Users/wzj/AppData/Local/Microsoft/WindowsApps/doxygen.exe"
+      - "C:/Users/wzj/AppData/Local/Microsoft/WindowsApps/doxygen"
+      - "C:/Users/wzj/app/Microsoft VS Code/bin/doxygen.com"
+      - "C:/Users/wzj/app/Microsoft VS Code/bin/doxygen.exe"
+      - "C:/Users/wzj/app/Microsoft VS Code/bin/doxygen"
+      - "C:/Program Files/JetBrains/IntelliJ IDEA 2025.1.3/bin/doxygen.com"
+      - "C:/Program Files/JetBrains/IntelliJ IDEA 2025.1.3/bin/doxygen.exe"
+      - "C:/Program Files/JetBrains/IntelliJ IDEA 2025.1.3/bin/doxygen"
+      - "C:/Users/wzj/AppData/Roaming/npm/doxygen.com"
+      - "C:/Users/wzj/AppData/Roaming/npm/doxygen.exe"
+      - "C:/Users/wzj/AppData/Roaming/npm/doxygen"
+      - "C:/Program Files/JetBrains/CLion 2025.1.3/bin/doxygen.com"
+      - "C:/Program Files/JetBrains/CLion 2025.1.3/bin/doxygen.exe"
+      - "C:/Program Files/JetBrains/CLion 2025.1.3/bin/doxygen"
+      - "C:/Program Files/JetBrains/JetBrains Rider 2025.1.4/bin/doxygen.com"
+      - "C:/Program Files/JetBrains/JetBrains Rider 2025.1.4/bin/doxygen.exe"
+      - "C:/Program Files/JetBrains/JetBrains Rider 2025.1.4/bin/doxygen"
+      - "C:/Program Files/JetBrains/DataGrip 2025.1.3/bin/doxygen.com"
+      - "C:/Program Files/JetBrains/DataGrip 2025.1.3/bin/doxygen.exe"
+      - "C:/Program Files/JetBrains/DataGrip 2025.1.3/bin/doxygen"
+      - "C:/Program Files/JetBrains/PyCharm 2025.1.3/bin/doxygen.com"
+      - "C:/Program Files/JetBrains/PyCharm 2025.1.3/bin/doxygen.exe"
+      - "C:/Program Files/JetBrains/PyCharm 2025.1.3/bin/doxygen"
+      - "C:/Program Files/bin/doxygen.com"
+      - "C:/Program Files/bin/doxygen.exe"
+      - "C:/Program Files/bin/doxygen"
+      - "C:/Program Files/sbin/doxygen.com"
+      - "C:/Program Files/sbin/doxygen.exe"
+      - "C:/Program Files/sbin/doxygen"
+      - "C:/Program Files/doxygen.com"
+      - "C:/Program Files/doxygen.exe"
+      - "C:/Program Files/doxygen"
+      - "C:/Program Files (x86)/bin/doxygen.com"
+      - "C:/Program Files (x86)/bin/doxygen.exe"
+      - "C:/Program Files (x86)/bin/doxygen"
+      - "C:/Program Files (x86)/sbin/doxygen.com"
+      - "C:/Program Files (x86)/sbin/doxygen.exe"
+      - "C:/Program Files (x86)/sbin/doxygen"
+      - "C:/Program Files (x86)/doxygen.com"
+      - "C:/Program Files (x86)/doxygen.exe"
+      - "C:/Program Files (x86)/doxygen"
+      - "C:/cmake-4.1.0-windows-x86_64/cmake-4.1.0-windows-x86_64/bin/doxygen.com"
+      - "C:/cmake-4.1.0-windows-x86_64/cmake-4.1.0-windows-x86_64/bin/doxygen.exe"
+      - "C:/cmake-4.1.0-windows-x86_64/cmake-4.1.0-windows-x86_64/bin/doxygen"
+      - "C:/cmake-4.1.0-windows-x86_64/cmake-4.1.0-windows-x86_64/sbin/doxygen.com"
+      - "C:/cmake-4.1.0-windows-x86_64/cmake-4.1.0-windows-x86_64/sbin/doxygen.exe"
+      - "C:/cmake-4.1.0-windows-x86_64/cmake-4.1.0-windows-x86_64/sbin/doxygen"
+      - "C:/cmake-4.1.0-windows-x86_64/cmake-4.1.0-windows-x86_64/doxygen.com"
+      - "C:/cmake-4.1.0-windows-x86_64/cmake-4.1.0-windows-x86_64/doxygen.exe"
+      - "C:/cmake-4.1.0-windows-x86_64/cmake-4.1.0-windows-x86_64/doxygen"
+      - "C:/Program Files/Hazel/bin/doxygen.com"
+      - "C:/Program Files/Hazel/bin/doxygen.exe"
+      - "C:/Program Files/Hazel/bin/doxygen"
+      - "C:/Program Files/Hazel/sbin/doxygen.com"
+      - "C:/Program Files/Hazel/sbin/doxygen.exe"
+      - "C:/Program Files/Hazel/sbin/doxygen"
+      - "C:/Program Files/Hazel/doxygen.com"
+      - "C:/Program Files/Hazel/doxygen.exe"
+      - "C:/Program Files/Hazel/doxygen"
+      - "/REGISTRY-NOTFOUND/bin/doxygen.com"
+      - "/REGISTRY-NOTFOUND/bin/doxygen.exe"
+      - "/REGISTRY-NOTFOUND/bin/doxygen"
+      - "/Applications/Doxygen.app/Contents/Resources/doxygen.com"
+      - "/Applications/Doxygen.app/Contents/Resources/doxygen.exe"
+      - "/Applications/Doxygen.app/Contents/Resources/doxygen"
+      - "/Applications/Doxygen.app/Contents/MacOS/doxygen.com"
+      - "/Applications/Doxygen.app/Contents/MacOS/doxygen.exe"
+      - "/Applications/Doxygen.app/Contents/MacOS/doxygen"
+      - "/Applications/Utilities/Doxygen.app/Contents/Resources/doxygen.com"
+      - "/Applications/Utilities/Doxygen.app/Contents/Resources/doxygen.exe"
+      - "/Applications/Utilities/Doxygen.app/Contents/Resources/doxygen"
+      - "/Applications/Utilities/Doxygen.app/Contents/MacOS/doxygen.com"
+      - "/Applications/Utilities/Doxygen.app/Contents/MacOS/doxygen.exe"
+      - "/Applications/Utilities/Doxygen.app/Contents/MacOS/doxygen"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64"
+        - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Team Tools\\DiagnosticsHub\\Collector"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.22621.0\\\\x64"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\\\x64"
+        - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\\\MSBuild\\Current\\Bin\\amd64"
+        - "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319"
+        - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\"
+        - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\Tools\\"
+        - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\anaconda"
+        - "C:\\anaconda\\Library\\mingw-w64\\bin"
+        - "C:\\anaconda\\Library\\usr\\bin"
+        - "C:\\anaconda\\Library\\bin"
+        - "C:\\anaconda\\Scripts"
+        - "C:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\"
+        - "C:\\windows\\system32"
+        - "C:\\windows"
+        - "C:\\windows\\System32\\Wbem"
+        - "C:\\windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR"
+        - "C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Program Files\\HP\\OMEN-Broadcast\\Common"
+        - "C:\\Users\\wzj\\project\\nvm"
+        - "C:\\nvm4w\\nodejs"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\mysql-9.3.0-winx64\\mysql-9.3.0-winx64\\bin"
+        - "C:\\Program Files\\Java\\jdk-11\\bin"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\JetBrains\\CLion 2025.1.3\\bin\\mingw\\bin"
+        - "C:\\Users\\wzj\\.m2\\wrapper\\dists\\apache-maven-3.9.10-bin\\53h08a94dg6djh6umvruv7q564\\apache-maven-3.9.10\\bin"
+        - "C:\\Redis-x64-3.0.504"
+        - "C:\\Program Files (x86)\\NetSarang\\Xshell 8\\"
+        - "C:\\MinGw\\mingw64\\bin"
+        - "C:\\cmake-4.1.0-windows-x86_64\\cmake-4.1.0-windows-x86_64\\bin"
+        - "C:\\hadoop-3.3.0\\hadoop-3.3.0\\bin"
+        - "%MSVC_HOME%\\bin\\Hostx64\\x64"
+        - "C:\\Users\\wzj\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:\\Users\\wzj\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\wzj\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\wzj\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\wzj\\app\\Microsoft VS Code\\bin"
+        - "C:\\Users\\wzj\\project\\nvm"
+        - "C:\\nvm4w\\nodejs"
+        - "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2025.1.3\\bin"
+        - "C:\\Users\\wzj\\AppData\\Roaming\\npm"
+        - "C:\\Program Files\\JetBrains\\CLion 2025.1.3\\bin"
+        - "C:\\Program Files\\JetBrains\\JetBrains Rider 2025.1.4\\bin"
+        - "C:\\Program Files\\JetBrains\\DataGrip 2025.1.3\\bin"
+        - "C:\\Program Files\\JetBrains\\PyCharm 2025.1.3\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files/Hazel"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/cmake-4.1.0-windows-x86_64/cmake-4.1.0-windows-x86_64"
+        - "C:/Program Files/Hazel"
+...

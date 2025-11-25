@@ -86,7 +86,8 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\vscode-workplace\c\Hazel\Hazel\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\vscode-workplace\c\Hazel\Hazel\src;C:\vscode-workplace\c\Hazel\Hazel\submodule\spdlog\include;C:\vscode-workplace\c\Hazel\Hazel\submodule\glfw\include;C:\vscode-workplace\c\Hazel\Hazel\submodule\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -110,10 +111,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;WINDOWS;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\vscode-workplace\c\Hazel\Hazel\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\vscode-workplace\c\Hazel\Hazel\src;C:\vscode-workplace\c\Hazel\Hazel\submodule\spdlog\include;C:\vscode-workplace\c\Hazel\Hazel\submodule\glfw\include;C:\vscode-workplace\c\Hazel\Hazel\submodule\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\vscode-workplace\c\Hazel\Hazel\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\vscode-workplace\c\Hazel\Hazel\src;C:\vscode-workplace\c\Hazel\Hazel\submodule\spdlog\include;C:\vscode-workplace\c\Hazel\Hazel\submodule\glfw\include;C:\vscode-workplace\c\Hazel\Hazel\submodule\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -133,7 +134,7 @@ exit /b %1
 if %errorlevel% neq 0 goto :VCEnd</Command>
     </PostBuildEvent>
     <Link>
-      <AdditionalDependencies>..\lib\Debug\HazelCore.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>..\lib\Debug\HazelCore.lib;..\Hazel\submodule\glfw\src\Debug\glfw3.lib;..\Hazel\Debug\glad.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <DataExecutionPrevention></DataExecutionPrevention>
@@ -152,7 +153,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\vscode-workplace\c\Hazel\Hazel\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\vscode-workplace\c\Hazel\Hazel\src;C:\vscode-workplace\c\Hazel\Hazel\submodule\spdlog\include;C:\vscode-workplace\c\Hazel\Hazel\submodule\glfw\include;C:\vscode-workplace\c\Hazel\Hazel\submodule\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -177,10 +179,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;WINDOWS;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\vscode-workplace\c\Hazel\Hazel\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\vscode-workplace\c\Hazel\Hazel\src;C:\vscode-workplace\c\Hazel\Hazel\submodule\spdlog\include;C:\vscode-workplace\c\Hazel\Hazel\submodule\glfw\include;C:\vscode-workplace\c\Hazel\Hazel\submodule\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\vscode-workplace\c\Hazel\Hazel\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\vscode-workplace\c\Hazel\Hazel\src;C:\vscode-workplace\c\Hazel\Hazel\submodule\spdlog\include;C:\vscode-workplace\c\Hazel\Hazel\submodule\glfw\include;C:\vscode-workplace\c\Hazel\Hazel\submodule\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -200,7 +202,7 @@ exit /b %1
 if %errorlevel% neq 0 goto :VCEnd</Command>
     </PostBuildEvent>
     <Link>
-      <AdditionalDependencies>..\lib\Release\HazelCore.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>..\lib\Release\HazelCore.lib;..\Hazel\submodule\glfw\src\Release\glfw3.lib;..\Hazel\Release\glad.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <DataExecutionPrevention></DataExecutionPrevention>
@@ -219,7 +221,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\vscode-workplace\c\Hazel\Hazel\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\vscode-workplace\c\Hazel\Hazel\src;C:\vscode-workplace\c\Hazel\Hazel\submodule\spdlog\include;C:\vscode-workplace\c\Hazel\Hazel\submodule\glfw\include;C:\vscode-workplace\c\Hazel\Hazel\submodule\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -244,10 +247,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;WINDOWS;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\vscode-workplace\c\Hazel\Hazel\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\vscode-workplace\c\Hazel\Hazel\src;C:\vscode-workplace\c\Hazel\Hazel\submodule\spdlog\include;C:\vscode-workplace\c\Hazel\Hazel\submodule\glfw\include;C:\vscode-workplace\c\Hazel\Hazel\submodule\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\vscode-workplace\c\Hazel\Hazel\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\vscode-workplace\c\Hazel\Hazel\src;C:\vscode-workplace\c\Hazel\Hazel\submodule\spdlog\include;C:\vscode-workplace\c\Hazel\Hazel\submodule\glfw\include;C:\vscode-workplace\c\Hazel\Hazel\submodule\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -267,7 +270,7 @@ exit /b %1
 if %errorlevel% neq 0 goto :VCEnd</Command>
     </PostBuildEvent>
     <Link>
-      <AdditionalDependencies>..\lib\MinSizeRel\HazelCore.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>..\lib\MinSizeRel\HazelCore.lib;..\Hazel\submodule\glfw\src\MinSizeRel\glfw3.lib;..\Hazel\MinSizeRel\glad.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <DataExecutionPrevention></DataExecutionPrevention>
@@ -286,7 +289,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\vscode-workplace\c\Hazel\Hazel\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\vscode-workplace\c\Hazel\Hazel\src;C:\vscode-workplace\c\Hazel\Hazel\submodule\spdlog\include;C:\vscode-workplace\c\Hazel\Hazel\submodule\glfw\include;C:\vscode-workplace\c\Hazel\Hazel\submodule\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -310,10 +314,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;WINDOWS;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\vscode-workplace\c\Hazel\Hazel\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\vscode-workplace\c\Hazel\Hazel\src;C:\vscode-workplace\c\Hazel\Hazel\submodule\spdlog\include;C:\vscode-workplace\c\Hazel\Hazel\submodule\glfw\include;C:\vscode-workplace\c\Hazel\Hazel\submodule\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\vscode-workplace\c\Hazel\Hazel\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\vscode-workplace\c\Hazel\Hazel\src;C:\vscode-workplace\c\Hazel\Hazel\submodule\spdlog\include;C:\vscode-workplace\c\Hazel\Hazel\submodule\glfw\include;C:\vscode-workplace\c\Hazel\Hazel\submodule\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -333,7 +337,7 @@ exit /b %1
 if %errorlevel% neq 0 goto :VCEnd</Command>
     </PostBuildEvent>
     <Link>
-      <AdditionalDependencies>..\lib\RelWithDebInfo\HazelCore.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>..\lib\RelWithDebInfo\HazelCore.lib;..\Hazel\submodule\glfw\src\RelWithDebInfo\glfw3.lib;..\Hazel\RelWithDebInfo\glad.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <DataExecutionPrevention></DataExecutionPrevention>
@@ -421,6 +425,14 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ProjectReference Include="C:\vscode-workplace\c\Hazel\build\Hazel\HazelCore.vcxproj">
       <Project>{11E2C135-900E-3FC4-9AD8-9ECA49B5D9F1}</Project>
       <Name>HazelCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\vscode-workplace\c\Hazel\build\Hazel\glad.vcxproj">
+      <Project>{53F75BB2-6222-371B-8560-479DC5D2CEFC}</Project>
+      <Name>glad</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\vscode-workplace\c\Hazel\build\Hazel\submodule\glfw\src\glfw.vcxproj">
+      <Project>{D2B0829A-85F7-3F81-A589-D25563B2D6FB}</Project>
+      <Name>glfw</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

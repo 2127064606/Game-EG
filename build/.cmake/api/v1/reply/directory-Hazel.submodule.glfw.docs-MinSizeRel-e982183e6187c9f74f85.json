@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "Hazel/submodule/glfw/docs",
+		"source" : "Hazel/submodule/glfw/docs"
+	}
+}

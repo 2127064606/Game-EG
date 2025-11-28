@@ -14,7 +14,7 @@
 namespace Hazel {
     void Application::Run() {
     //  m_Window = Window::Create();   
-     float sliderValue = 0.5f;
+     static float sliderValue = 0.5f;
        while(m_Running){
          glClear(GL_COLOR_BUFFER_BIT);
          glClearColor(0.2f, 0.3f, 0.3f, 1.0f);    
@@ -24,7 +24,7 @@ namespace Hazel {
 
          ImGui::NewFrame();
 
-         ImGui::Begin("Hazel Engine");
+         ImGui::Begin("Hazel Engine", nullptr, 0);
          ImGui::Text("Hello, World!");
          ImGui::SliderFloat("float", &sliderValue, 0.0f, 1.0f);
          ImGui::Button("Click Me");

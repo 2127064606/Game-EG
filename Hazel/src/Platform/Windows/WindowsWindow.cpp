@@ -56,6 +56,7 @@ namespace Hazel{
         ImGui::CreateContext();
         ImGuiIO& io = ImGui::GetIO();
         io.ConfigFlags |= ImGuiConfigFlags_NavEnableKeyboard; // 启用键盘导航
+
         
         // 设置ImGui样式
         ImGui::StyleColorsDark();
@@ -74,7 +75,6 @@ namespace Hazel{
             return;
           }
 
-         
             WindowData& data = *(WindowData*)userPointer;
             
             data.Width = width;
@@ -89,8 +89,7 @@ namespace Hazel{
             HAZEL_CORE_ERROR("Window user pointer is null!");
             return;
           }
-          ImGuiIO& io = ImGui::GetIO();
-          if(io.WantCaptureMouse)return;
+         
             WindowData& data = *(WindowData*)userPointer;
             WindowClosedEvent e;
             data.EventCallback(e);
@@ -103,6 +102,8 @@ namespace Hazel{
             return;
           }
           
+          ImGuiIO& io = ImGui::GetIO();
+          if(io.WantCaptureKeyboard)return;
            WindowData& data = *(WindowData*)userPointer;
            switch(action){
             case GLFW_PRESS:
@@ -131,6 +132,8 @@ namespace Hazel{
             HAZEL_CORE_ERROR("Window user pointer is null!");
             return;
           }
+          ImGuiIO& io = ImGui::GetIO();
+          if(io.WantTextInput)return;
            WindowData& data = *(WindowData*)userPointer;
            KeyTypedEvent e((KeyCode)keycode);
            data.EventCallback(e);
@@ -141,6 +144,10 @@ namespace Hazel{
             HAZEL_CORE_ERROR("Window user pointer is null!");
             return;
           }
+          ImGuiIO& io = ImGui::GetIO();
+          if(button >= 0 && button < IM_ARRAYSIZE(io.MouseDown))
+                  io.MouseDown[button] = (action == GLFW_PRESS);
+          if(io.WantCaptureMouse)return;
           
            WindowData& data = *(WindowData*)userPointer;
             switch(action){
@@ -175,6 +182,9 @@ namespace Hazel{
             HAZEL_CORE_ERROR("Window user pointer is null!");
             return;
           }
+           ImGuiIO& io = ImGui::GetIO();
+          if(io.WantCaptureMouse)return;
+
            WindowData& data = *(WindowData*)userPointer;
            MouseScrolledEvent e((float)xOffset, (float)yOffset);
            data.EventCallback(e);
@@ -186,6 +196,9 @@ namespace Hazel{
             HAZEL_CORE_ERROR("Window user pointer is null!");
             return;
           }
+          ImGuiIO& io = ImGui::GetIO();
+          io.MousePos = ImVec2((float)xPos, (float)yPos);
+          if(io.WantCaptureMouse)return;
            WindowData& data = *(WindowData*)userPointer;
            MouseMovedEvent e((float)xPos, (float)yPos);
            data.EventCallback(e);

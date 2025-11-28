@@ -292,7 +292,7 @@ GLFW_SOURCE_DIR:STATIC=C:/vscode-workplace/c/Hazel/Hazel/submodule/glfw
 GLFW_USE_HYBRID_HPG:BOOL=OFF
 
 //Dependencies for the target
-HazelCore_LIB_DEPENDS:STATIC=general;glfw;general;glad;general;opengl32;
+HazelCore_LIB_DEPENDS:STATIC=general;glfw;general;glad;general;opengl32;general;imgui;
 
 //Value Computed by CMake
 Hazel_BINARY_DIR:STATIC=C:/vscode-workplace/c/Hazel/build
@@ -323,6 +323,9 @@ SandBox_SOURCE_DIR:STATIC=C:/vscode-workplace/c/Hazel/SandBox
 
 //Use MSVC runtime library DLL
 USE_MSVC_RUNTIME_LIBRARY_DLL:BOOL=ON
+
+//Dependencies for the target
+imgui_LIB_DEPENDS:STATIC=general;glfw;general;opengl32;
 
 
 ########################

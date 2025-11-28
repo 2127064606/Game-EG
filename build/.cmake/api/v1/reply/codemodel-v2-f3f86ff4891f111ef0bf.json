@@ -1,0 +1,1104 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						5
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						6
+					]
+				},
+				{
+					"build" : "Hazel",
+					"childIndexes" : 
+					[
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-Hazel-Debug-458a867953a40626c0af.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "Hazel",
+					"targetIndexes" : 
+					[
+						1,
+						4,
+						7,
+						9
+					]
+				},
+				{
+					"build" : "Hazel/submodule/glfw",
+					"childIndexes" : 
+					[
+						3,
+						4
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-Hazel.submodule.glfw-Debug-8f9f733f52fe8b46b52f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 2,
+					"source" : "Hazel/submodule/glfw",
+					"targetIndexes" : 
+					[
+						2,
+						10
+					]
+				},
+				{
+					"build" : "Hazel/submodule/glfw/src",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-Hazel.submodule.glfw.src-Debug-69a6e805d7045d42cd39.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 2,
+					"source" : "Hazel/submodule/glfw/src",
+					"targetIndexes" : 
+					[
+						8,
+						11
+					]
+				},
+				{
+					"build" : "Hazel/submodule/glfw/docs",
+					"jsonFile" : "directory-Hazel.submodule.glfw.docs-Debug-e982183e6187c9f74f85.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 2,
+					"source" : "Hazel/submodule/glfw/docs"
+				},
+				{
+					"build" : "SandBox",
+					"jsonFile" : "directory-SandBox-Debug-586815f1595e75b78217.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 3,
+					"source" : "SandBox",
+					"targetIndexes" : 
+					[
+						3,
+						5
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						3
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Hazel",
+					"targetIndexes" : 
+					[
+						0,
+						6
+					]
+				},
+				{
+					"childIndexes" : 
+					[
+						2
+					],
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "Hazel_core",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1,
+						4,
+						7,
+						9
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2,
+						3,
+						4
+					],
+					"name" : "GLFW",
+					"parentIndex" : 1,
+					"targetIndexes" : 
+					[
+						2,
+						8,
+						10,
+						11
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						5
+					],
+					"name" : "SandBox",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						3,
+						5
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-Debug-276681fc98c16a7762c2.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ALL_BUILD::@c312927d72e11e7b372f",
+					"jsonFile" : "target-ALL_BUILD-Debug-628ed20b65a682abcc23.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "ALL_BUILD::@67ec156c75e0a2dadbf5",
+					"jsonFile" : "target-ALL_BUILD-Debug-9ca7a7ebfd446dffcb2d.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "ALL_BUILD::@59124dff6085fa067dfa",
+					"jsonFile" : "target-ALL_BUILD-Debug-3aea87add7458eeaa3e2.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "HazelCore::@c312927d72e11e7b372f",
+					"jsonFile" : "target-HazelCore-Debug-745a40ac060fcb0fcc01.json",
+					"name" : "HazelCore",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "SandBox::@59124dff6085fa067dfa",
+					"jsonFile" : "target-SandBox-Debug-ab7a43e74d3ec886fa13.json",
+					"name" : "SandBox",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-Debug-59638d9426dc40a82516.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "glad::@c312927d72e11e7b372f",
+					"jsonFile" : "target-glad-Debug-917d0e7d33e87b9a766b.json",
+					"name" : "glad",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "glfw::@2c492867fb0375d58501",
+					"jsonFile" : "target-glfw-Debug-9a826914c2ced1b0dece.json",
+					"name" : "glfw",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "imgui::@c312927d72e11e7b372f",
+					"jsonFile" : "target-imgui-Debug-4f63844bc7425362e349.json",
+					"name" : "imgui",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "uninstall::@67ec156c75e0a2dadbf5",
+					"jsonFile" : "target-uninstall-Debug-24ed3ce0d836bef8c2a0.json",
+					"name" : "uninstall",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "update_mappings::@2c492867fb0375d58501",
+					"jsonFile" : "target-update_mappings-Debug-459a2b4f069e9018f9a6.json",
+					"name" : "update_mappings",
+					"projectIndex" : 2
+				}
+			]
+		},
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						5
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Release-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						6
+					]
+				},
+				{
+					"build" : "Hazel",
+					"childIndexes" : 
+					[
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-Hazel-Release-458a867953a40626c0af.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "Hazel",
+					"targetIndexes" : 
+					[
+						1,
+						4,
+						7,
+						9
+					]
+				},
+				{
+					"build" : "Hazel/submodule/glfw",
+					"childIndexes" : 
+					[
+						3,
+						4
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-Hazel.submodule.glfw-Release-8f9f733f52fe8b46b52f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 2,
+					"source" : "Hazel/submodule/glfw",
+					"targetIndexes" : 
+					[
+						2,
+						10
+					]
+				},
+				{
+					"build" : "Hazel/submodule/glfw/src",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-Hazel.submodule.glfw.src-Release-370c03c6175dfe4b1006.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 2,
+					"source" : "Hazel/submodule/glfw/src",
+					"targetIndexes" : 
+					[
+						8,
+						11
+					]
+				},
+				{
+					"build" : "Hazel/submodule/glfw/docs",
+					"jsonFile" : "directory-Hazel.submodule.glfw.docs-Release-e982183e6187c9f74f85.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 2,
+					"source" : "Hazel/submodule/glfw/docs"
+				},
+				{
+					"build" : "SandBox",
+					"jsonFile" : "directory-SandBox-Release-586815f1595e75b78217.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 3,
+					"source" : "SandBox",
+					"targetIndexes" : 
+					[
+						3,
+						5
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						3
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Hazel",
+					"targetIndexes" : 
+					[
+						0,
+						6
+					]
+				},
+				{
+					"childIndexes" : 
+					[
+						2
+					],
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "Hazel_core",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1,
+						4,
+						7,
+						9
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2,
+						3,
+						4
+					],
+					"name" : "GLFW",
+					"parentIndex" : 1,
+					"targetIndexes" : 
+					[
+						2,
+						8,
+						10,
+						11
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						5
+					],
+					"name" : "SandBox",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						3,
+						5
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-Release-276681fc98c16a7762c2.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ALL_BUILD::@c312927d72e11e7b372f",
+					"jsonFile" : "target-ALL_BUILD-Release-628ed20b65a682abcc23.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "ALL_BUILD::@67ec156c75e0a2dadbf5",
+					"jsonFile" : "target-ALL_BUILD-Release-9ca7a7ebfd446dffcb2d.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "ALL_BUILD::@59124dff6085fa067dfa",
+					"jsonFile" : "target-ALL_BUILD-Release-3aea87add7458eeaa3e2.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "HazelCore::@c312927d72e11e7b372f",
+					"jsonFile" : "target-HazelCore-Release-4fe9f70cfc0f7a50cd98.json",
+					"name" : "HazelCore",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "SandBox::@59124dff6085fa067dfa",
+					"jsonFile" : "target-SandBox-Release-9eab57060ed3d8723d9e.json",
+					"name" : "SandBox",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-Release-59638d9426dc40a82516.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "glad::@c312927d72e11e7b372f",
+					"jsonFile" : "target-glad-Release-02e1d50ca2e36f0d39d4.json",
+					"name" : "glad",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "glfw::@2c492867fb0375d58501",
+					"jsonFile" : "target-glfw-Release-903c599fde6e27410a7f.json",
+					"name" : "glfw",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "imgui::@c312927d72e11e7b372f",
+					"jsonFile" : "target-imgui-Release-880baaf4655f17a580d8.json",
+					"name" : "imgui",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "uninstall::@67ec156c75e0a2dadbf5",
+					"jsonFile" : "target-uninstall-Release-24ed3ce0d836bef8c2a0.json",
+					"name" : "uninstall",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "update_mappings::@2c492867fb0375d58501",
+					"jsonFile" : "target-update_mappings-Release-459a2b4f069e9018f9a6.json",
+					"name" : "update_mappings",
+					"projectIndex" : 2
+				}
+			]
+		},
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						5
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-MinSizeRel-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						6
+					]
+				},
+				{
+					"build" : "Hazel",
+					"childIndexes" : 
+					[
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-Hazel-MinSizeRel-458a867953a40626c0af.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "Hazel",
+					"targetIndexes" : 
+					[
+						1,
+						4,
+						7,
+						9
+					]
+				},
+				{
+					"build" : "Hazel/submodule/glfw",
+					"childIndexes" : 
+					[
+						3,
+						4
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-Hazel.submodule.glfw-MinSizeRel-8f9f733f52fe8b46b52f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 2,
+					"source" : "Hazel/submodule/glfw",
+					"targetIndexes" : 
+					[
+						2,
+						10
+					]
+				},
+				{
+					"build" : "Hazel/submodule/glfw/src",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-Hazel.submodule.glfw.src-MinSizeRel-8b4b41ed82583580fe2d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 2,
+					"source" : "Hazel/submodule/glfw/src",
+					"targetIndexes" : 
+					[
+						8,
+						11
+					]
+				},
+				{
+					"build" : "Hazel/submodule/glfw/docs",
+					"jsonFile" : "directory-Hazel.submodule.glfw.docs-MinSizeRel-e982183e6187c9f74f85.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 2,
+					"source" : "Hazel/submodule/glfw/docs"
+				},
+				{
+					"build" : "SandBox",
+					"jsonFile" : "directory-SandBox-MinSizeRel-586815f1595e75b78217.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 3,
+					"source" : "SandBox",
+					"targetIndexes" : 
+					[
+						3,
+						5
+					]
+				}
+			],
+			"name" : "MinSizeRel",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						3
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Hazel",
+					"targetIndexes" : 
+					[
+						0,
+						6
+					]
+				},
+				{
+					"childIndexes" : 
+					[
+						2
+					],
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "Hazel_core",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1,
+						4,
+						7,
+						9
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2,
+						3,
+						4
+					],
+					"name" : "GLFW",
+					"parentIndex" : 1,
+					"targetIndexes" : 
+					[
+						2,
+						8,
+						10,
+						11
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						5
+					],
+					"name" : "SandBox",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						3,
+						5
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-MinSizeRel-276681fc98c16a7762c2.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ALL_BUILD::@c312927d72e11e7b372f",
+					"jsonFile" : "target-ALL_BUILD-MinSizeRel-628ed20b65a682abcc23.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "ALL_BUILD::@67ec156c75e0a2dadbf5",
+					"jsonFile" : "target-ALL_BUILD-MinSizeRel-9ca7a7ebfd446dffcb2d.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "ALL_BUILD::@59124dff6085fa067dfa",
+					"jsonFile" : "target-ALL_BUILD-MinSizeRel-3aea87add7458eeaa3e2.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "HazelCore::@c312927d72e11e7b372f",
+					"jsonFile" : "target-HazelCore-MinSizeRel-fbc19bc936d6826a5b05.json",
+					"name" : "HazelCore",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "SandBox::@59124dff6085fa067dfa",
+					"jsonFile" : "target-SandBox-MinSizeRel-39a967b95b7b265a4dea.json",
+					"name" : "SandBox",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-MinSizeRel-59638d9426dc40a82516.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "glad::@c312927d72e11e7b372f",
+					"jsonFile" : "target-glad-MinSizeRel-e569ebc59d7a7fa594a3.json",
+					"name" : "glad",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "glfw::@2c492867fb0375d58501",
+					"jsonFile" : "target-glfw-MinSizeRel-668f37ae0193f162d91e.json",
+					"name" : "glfw",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "imgui::@c312927d72e11e7b372f",
+					"jsonFile" : "target-imgui-MinSizeRel-96239e0a2fe82534215e.json",
+					"name" : "imgui",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "uninstall::@67ec156c75e0a2dadbf5",
+					"jsonFile" : "target-uninstall-MinSizeRel-24ed3ce0d836bef8c2a0.json",
+					"name" : "uninstall",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "update_mappings::@2c492867fb0375d58501",
+					"jsonFile" : "target-update_mappings-MinSizeRel-459a2b4f069e9018f9a6.json",
+					"name" : "update_mappings",
+					"projectIndex" : 2
+				}
+			]
+		},
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						5
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-RelWithDebInfo-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						6
+					]
+				},
+				{
+					"build" : "Hazel",
+					"childIndexes" : 
+					[
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-Hazel-RelWithDebInfo-458a867953a40626c0af.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "Hazel",
+					"targetIndexes" : 
+					[
+						1,
+						4,
+						7,
+						9
+					]
+				},
+				{
+					"build" : "Hazel/submodule/glfw",
+					"childIndexes" : 
+					[
+						3,
+						4
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-Hazel.submodule.glfw-RelWithDebInfo-8f9f733f52fe8b46b52f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 2,
+					"source" : "Hazel/submodule/glfw",
+					"targetIndexes" : 
+					[
+						2,
+						10
+					]
+				},
+				{
+					"build" : "Hazel/submodule/glfw/src",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-Hazel.submodule.glfw.src-RelWithDebInfo-5b0fafd70c1bd45cd516.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 2,
+					"source" : "Hazel/submodule/glfw/src",
+					"targetIndexes" : 
+					[
+						8,
+						11
+					]
+				},
+				{
+					"build" : "Hazel/submodule/glfw/docs",
+					"jsonFile" : "directory-Hazel.submodule.glfw.docs-RelWithDebInfo-e982183e6187c9f74f85.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 2,
+					"source" : "Hazel/submodule/glfw/docs"
+				},
+				{
+					"build" : "SandBox",
+					"jsonFile" : "directory-SandBox-RelWithDebInfo-586815f1595e75b78217.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 3,
+					"source" : "SandBox",
+					"targetIndexes" : 
+					[
+						3,
+						5
+					]
+				}
+			],
+			"name" : "RelWithDebInfo",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						3
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Hazel",
+					"targetIndexes" : 
+					[
+						0,
+						6
+					]
+				},
+				{
+					"childIndexes" : 
+					[
+						2
+					],
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "Hazel_core",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1,
+						4,
+						7,
+						9
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2,
+						3,
+						4
+					],
+					"name" : "GLFW",
+					"parentIndex" : 1,
+					"targetIndexes" : 
+					[
+						2,
+						8,
+						10,
+						11
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						5
+					],
+					"name" : "SandBox",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						3,
+						5
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-RelWithDebInfo-276681fc98c16a7762c2.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ALL_BUILD::@c312927d72e11e7b372f",
+					"jsonFile" : "target-ALL_BUILD-RelWithDebInfo-628ed20b65a682abcc23.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "ALL_BUILD::@67ec156c75e0a2dadbf5",
+					"jsonFile" : "target-ALL_BUILD-RelWithDebInfo-9ca7a7ebfd446dffcb2d.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "ALL_BUILD::@59124dff6085fa067dfa",
+					"jsonFile" : "target-ALL_BUILD-RelWithDebInfo-3aea87add7458eeaa3e2.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "HazelCore::@c312927d72e11e7b372f",
+					"jsonFile" : "target-HazelCore-RelWithDebInfo-1c72eb40e1b3c797d74b.json",
+					"name" : "HazelCore",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "SandBox::@59124dff6085fa067dfa",
+					"jsonFile" : "target-SandBox-RelWithDebInfo-8980627b8f97cf5be591.json",
+					"name" : "SandBox",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-RelWithDebInfo-59638d9426dc40a82516.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "glad::@c312927d72e11e7b372f",
+					"jsonFile" : "target-glad-RelWithDebInfo-547a0b50c1e737ddf1b1.json",
+					"name" : "glad",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "glfw::@2c492867fb0375d58501",
+					"jsonFile" : "target-glfw-RelWithDebInfo-e22c45a843aa1c3a22da.json",
+					"name" : "glfw",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "imgui::@c312927d72e11e7b372f",
+					"jsonFile" : "target-imgui-RelWithDebInfo-6bdebbc1815783dcf3b7.json",
+					"name" : "imgui",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "uninstall::@67ec156c75e0a2dadbf5",
+					"jsonFile" : "target-uninstall-RelWithDebInfo-24ed3ce0d836bef8c2a0.json",
+					"name" : "uninstall",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "update_mappings::@2c492867fb0375d58501",
+					"jsonFile" : "target-update_mappings-RelWithDebInfo-459a2b4f069e9018f9a6.json",
+					"name" : "update_mappings",
+					"projectIndex" : 2
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/vscode-workplace/c/Hazel/build",
+		"source" : "C:/vscode-workplace/c/Hazel"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 8
+	}
+}

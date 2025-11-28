@@ -2,6 +2,7 @@ C:/vscode-workplace/c/Hazel/build/CMakeFiles/INSTALL.dir
 C:/vscode-workplace/c/Hazel/build/CMakeFiles/ALL_BUILD.dir
 C:/vscode-workplace/c/Hazel/build/CMakeFiles/ZERO_CHECK.dir
 C:/vscode-workplace/c/Hazel/build/Hazel/CMakeFiles/glad.dir
+C:/vscode-workplace/c/Hazel/build/Hazel/CMakeFiles/imgui.dir
 C:/vscode-workplace/c/Hazel/build/Hazel/CMakeFiles/HazelCore.dir
 C:/vscode-workplace/c/Hazel/build/Hazel/CMakeFiles/INSTALL.dir
 C:/vscode-workplace/c/Hazel/build/Hazel/CMakeFiles/ALL_BUILD.dir

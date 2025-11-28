@@ -4,16 +4,22 @@
     <ClCompile Include="C:\vscode-workplace\c\Hazel\build\Hazel\CMakeFiles\HazelCore.dir\cmake_pch.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\vscode-workplace\c\Hazel\Hazel\src\Hazel\Application.cpp">
+    <ClCompile Include="C:\vscode-workplace\c\Hazel\Hazel\src\Hazel\Core\Application.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\vscode-workplace\c\Hazel\Hazel\src\Hazel\Log.cpp">
+    <ClCompile Include="C:\vscode-workplace\c\Hazel\Hazel\src\Hazel\Core\Log.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\vscode-workplace\c\Hazel\Hazel\src\Hazel\Window.cpp">
+    <ClCompile Include="C:\vscode-workplace\c\Hazel\Hazel\src\Hazel\Core\Window.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="C:\vscode-workplace\c\Hazel\Hazel\src\Platform\Windows\WindowsWindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\vscode-workplace\c\Hazel\Hazel\src\Hazel\Core\Layer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\vscode-workplace\c\Hazel\Hazel\src\Hazel\Core\LayerStack.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

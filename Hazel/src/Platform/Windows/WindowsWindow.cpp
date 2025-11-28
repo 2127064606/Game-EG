@@ -1,11 +1,16 @@
 #include <Platform/Windows/WindowsWindow.hpp>
-#include <Hazel/Log.hpp>
+#include <Hazel/Core/Log.hpp>
 #include <Hazel/Event/ApplicationEvent.hpp>
 #include <Hazel/Event/KeyEvent.hpp>
 #include <Hazel/Event/MouseEvent.hpp>
+#include <imgui.h>
+#include <imgui_impl_glfw.h>
+#include <imgui_impl_opengl3.h>
+
 
 namespace Hazel{
     static uint8_t s_GLFWWindowCount = 0;
+    static bool s_ImGuiInitialized = false;
     WindowsWindow::WindowsWindow(const WindowProps& props){
         Init(props);
     }
@@ -44,12 +49,32 @@ namespace Hazel{
         glfwSetWindowUserPointer(m_Window, &m_Data);
 
         SetVSync(true);
+
+          // ====================== ImGui 初始化（单例） ======================
+    if (!s_ImGuiInitialized) { // 仅第一次创建窗口时初始化ImGui
+        IMGUI_CHECKVERSION();
+        ImGui::CreateContext();
+        ImGuiIO& io = ImGui::GetIO();
+        io.ConfigFlags |= ImGuiConfigFlags_NavEnableKeyboard; // 启用键盘导航
+        
+        // 设置ImGui样式
+        ImGui::StyleColorsDark();
+
+        // 初始化GLFW+OpenGL3后端（GLSL 460与你的OpenGL 4.6匹配）
+        ImGui_ImplGlfw_InitForOpenGL(m_Window, true); // true = 绑定当前GLFW上下文
+        ImGui_ImplOpenGL3_Init("#version 460 core");  // 与glfwWindowHint的版本一致
+
+        s_ImGuiInitialized = true; // 标记为已初始化
+    }
+
         glfwSetWindowSizeCallback(m_Window, [](GLFWwindow* window, int width, int height){
           void *userPointer = glfwGetWindowUserPointer(window);
           if(!userPointer){
             HAZEL_CORE_ERROR("Window user pointer is null!");
             return;
           }
+
+         
             WindowData& data = *(WindowData*)userPointer;
             
             data.Width = width;
@@ -64,6 +89,8 @@ namespace Hazel{
             HAZEL_CORE_ERROR("Window user pointer is null!");
             return;
           }
+          ImGuiIO& io = ImGui::GetIO();
+          if(io.WantCaptureMouse)return;
             WindowData& data = *(WindowData*)userPointer;
             WindowClosedEvent e;
             data.EventCallback(e);
@@ -75,6 +102,7 @@ namespace Hazel{
             HAZEL_CORE_ERROR("Window user pointer is null!");
             return;
           }
+          
            WindowData& data = *(WindowData*)userPointer;
            switch(action){
             case GLFW_PRESS:
@@ -113,6 +141,7 @@ namespace Hazel{
             HAZEL_CORE_ERROR("Window user pointer is null!");
             return;
           }
+          
            WindowData& data = *(WindowData*)userPointer;
             switch(action){
                 case GLFW_PRESS:

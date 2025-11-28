@@ -1,0 +1,404 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "bin/Release/HazelCore.dll"
+		},
+		{
+			"path" : "lib/Release/HazelCore.lib"
+		},
+		{
+			"path" : "bin/Release/HazelCore.pdb"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"target_link_libraries",
+			"target_compile_options",
+			"target_compile_definitions",
+			"target_include_directories",
+			"target_precompile_headers"
+		],
+		"files" : 
+		[
+			"Hazel/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 19,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 62,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 28,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 53,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 31,
+				"parent" : 0
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 55,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O2 /Ob2 /DNDEBUG -std:c++20"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "/utf-8"
+				},
+				{
+					"fragment" : "/YcC:/vscode-workplace/c/Hazel/build/Hazel/CMakeFiles/HazelCore.dir/Release/cmake_pch.hxx /FpC:/vscode-workplace/c/Hazel/build/Hazel/HazelCore.dir/Release/cmake_pch.pch /FIC:/vscode-workplace/c/Hazel/build/Hazel/CMakeFiles/HazelCore.dir/Release/cmake_pch.hxx"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 4,
+					"define" : "HAZEL_BUILD_API"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "HAZEL_DEBUG"
+				},
+				{
+					"define" : "HazelCore_EXPORTS"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "WINDOWS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 5,
+					"path" : "C:/vscode-workplace/c/Hazel/Hazel/src"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/vscode-workplace/c/Hazel/Hazel/submodule/spdlog/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/vscode-workplace/c/Hazel/Hazel/submodule/glfw/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/vscode-workplace/c/Hazel/Hazel/submodule/glad/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/vscode-workplace/c/Hazel/Hazel/submodule/imgui"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/vscode-workplace/c/Hazel/Hazel/submodule/imgui/backends"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1
+				],
+				"standard" : "20"
+			},
+			"precompileHeaders" : 
+			[
+				{
+					"backtrace" : 6,
+					"header" : "C:/vscode-workplace/c/Hazel/Hazel/src/PreHeader.hpp"
+				}
+			],
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O2 /Ob2 /DNDEBUG -std:c++20"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "/utf-8"
+				},
+				{
+					"fragment" : "/YuC:/vscode-workplace/c/Hazel/build/Hazel/CMakeFiles/HazelCore.dir/Release/cmake_pch.hxx /FpC:/vscode-workplace/c/Hazel/build/Hazel/HazelCore.dir/Release/cmake_pch.pch /FIC:/vscode-workplace/c/Hazel/build/Hazel/CMakeFiles/HazelCore.dir/Release/cmake_pch.hxx"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 4,
+					"define" : "HAZEL_BUILD_API"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "HAZEL_DEBUG"
+				},
+				{
+					"define" : "HazelCore_EXPORTS"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "WINDOWS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 5,
+					"path" : "C:/vscode-workplace/c/Hazel/Hazel/src"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/vscode-workplace/c/Hazel/Hazel/submodule/spdlog/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/vscode-workplace/c/Hazel/Hazel/submodule/glfw/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/vscode-workplace/c/Hazel/Hazel/submodule/glad/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/vscode-workplace/c/Hazel/Hazel/submodule/imgui"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/vscode-workplace/c/Hazel/Hazel/submodule/imgui/backends"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1
+				],
+				"standard" : "20"
+			},
+			"precompileHeaders" : 
+			[
+				{
+					"backtrace" : 6,
+					"header" : "C:/vscode-workplace/c/Hazel/Hazel/src/PreHeader.hpp"
+				}
+			],
+			"sourceIndexes" : 
+			[
+				1,
+				2,
+				3,
+				4,
+				5,
+				6
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "glad::@c312927d72e11e7b372f"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "imgui::@c312927d72e11e7b372f"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "glfw::@2c492867fb0375d58501"
+		},
+		{
+			"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df"
+		}
+	],
+	"id" : "HazelCore::@c312927d72e11e7b372f",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "/machine:x64 /INCREMENTAL:NO",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "submodule\\glfw\\src\\Release\\glfw3.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "Release\\glad.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "opengl32.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "Release\\imgui.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "submodule\\glfw\\src\\Release\\glfw3.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "opengl32.lib",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "HazelCore",
+	"nameOnDisk" : "HazelCore.dll",
+	"paths" : 
+	{
+		"build" : "Hazel",
+		"source" : "Hazel"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6
+			]
+		},
+		{
+			"name" : "Precompile Header File",
+			"sourceIndexes" : 
+			[
+				7,
+				8,
+				9,
+				10
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 0,
+			"compileGroupIndex" : 0,
+			"path" : "build/Hazel/CMakeFiles/HazelCore.dir/cmake_pch.cxx",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "Hazel/src/Hazel/Core/Application.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "Hazel/src/Hazel/Core/Log.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "Hazel/src/Hazel/Core/Window.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "Hazel/src/Platform/Windows/WindowsWindow.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "Hazel/src/Hazel/Core/Layer.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "Hazel/src/Hazel/Core/LayerStack.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"path" : "build/Hazel/CMakeFiles/HazelCore.dir/Debug/cmake_pch.hxx",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"path" : "build/Hazel/CMakeFiles/HazelCore.dir/Release/cmake_pch.hxx",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"path" : "build/Hazel/CMakeFiles/HazelCore.dir/MinSizeRel/cmake_pch.hxx",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"path" : "build/Hazel/CMakeFiles/HazelCore.dir/RelWithDebInfo/cmake_pch.hxx",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "SHARED_LIBRARY"
+}

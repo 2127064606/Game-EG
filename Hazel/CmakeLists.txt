@@ -6,11 +6,23 @@ add_library(glad STATIC
     ${PROJECT_SOURCE_DIR}/submodule/glad/src/glad.c
 )
 
+add_library(imgui STATIC
+    ${PROJECT_SOURCE_DIR}/submodule/imgui/imgui.cpp
+    ${PROJECT_SOURCE_DIR}/submodule/imgui/imgui_demo.cpp
+    ${PROJECT_SOURCE_DIR}/submodule/imgui/imgui_draw.cpp
+    ${PROJECT_SOURCE_DIR}/submodule/imgui/imgui_widgets.cpp
+    ${PROJECT_SOURCE_DIR}/submodule/imgui/imgui_tables.cpp
+    ${PROJECT_SOURCE_DIR}/submodule/imgui/backends/imgui_impl_glfw.cpp
+    ${PROJECT_SOURCE_DIR}/submodule/imgui/backends/imgui_impl_opengl3.cpp
+)
+
 add_library(HazelCore SHARED
-    src/Hazel/Application.cpp
-    src/Hazel/Log.cpp
-    src/Hazel/Window.cpp
+    src/Hazel/Core/Application.cpp
+    src/Hazel/Core/Log.cpp
+    src/Hazel/Core/Window.cpp
     src/Platform/Windows/WindowsWindow.cpp
+    src/Hazel/Core/Layer.cpp
+    src/Hazel/Core/LayerStack.cpp
 )
 if(MSVC)
     target_compile_options(HazelCore PRIVATE /utf-8)
@@ -22,13 +34,23 @@ target_include_directories(HazelCore
         ${PROJECT_SOURCE_DIR}/submodule/spdlog/include
         ${PROJECT_SOURCE_DIR}/submodule/glfw/include
         ${PROJECT_SOURCE_DIR}/submodule/glad/include
+        ${PROJECT_SOURCE_DIR}/submodule/imgui
 )
 
 target_include_directories(glad
     PUBLIC
         ${PROJECT_SOURCE_DIR}/submodule/glad/include
 )
-target_compile_definitions(HazelCore PRIVATE HAZEL_BUILD_API WINDOWS)
+
+target_include_directories(imgui
+    PUBLIC
+        ${PROJECT_SOURCE_DIR}/submodule/imgui
+        ${PROJECT_SOURCE_DIR}/submodule/imgui/backends
+)
+
+target_link_libraries(imgui PRIVATE glfw opengl32)
+
+target_compile_definitions(HazelCore PRIVATE HAZEL_BUILD_API WINDOWS HAZEL_DEBUG)
 
 target_precompile_headers(HazelCore PRIVATE src/PreHeader.hpp)
 
@@ -37,7 +59,7 @@ target_precompile_headers(HazelCore PRIVATE src/PreHeader.hpp)
 
 
 add_subdirectory(${PROJECT_SOURCE_DIR}/submodule/glfw)
-target_link_libraries(HazelCore PRIVATE glfw glad opengl32)
+target_link_libraries(HazelCore PRIVATE glfw glad opengl32 imgui)
 
 
 

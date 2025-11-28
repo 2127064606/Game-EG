@@ -1,4 +1,4 @@
-#include <Hazel/Window.hpp>
+#include <Hazel/Core/Window.hpp>
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
 

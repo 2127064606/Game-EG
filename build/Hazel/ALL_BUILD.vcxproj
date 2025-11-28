@@ -186,6 +186,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Project>{D2B0829A-85F7-3F81-A589-D25563B2D6FB}</Project>
       <Name>glfw</Name>
     </ProjectReference>
+    <ProjectReference Include="C:\vscode-workplace\c\Hazel\build\Hazel\imgui.vcxproj">
+      <Project>{F8470DB4-FB1C-3581-BDFF-EFC756460F36}</Project>
+      <Name>imgui</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

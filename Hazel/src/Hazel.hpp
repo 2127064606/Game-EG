@@ -1,3 +1,3 @@
-#include <Hazel/Application.hpp>
-#include <Hazel/EntryPoint.hpp>
-#include <Hazel/Log.hpp>
+#include <Hazel/Core/Application.hpp>
+#include <Hazel/Core/EntryPoint.hpp>
+#include <Hazel/Core/Log.hpp>
